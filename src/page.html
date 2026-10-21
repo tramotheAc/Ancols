@@ -1,0 +1,207 @@
+<div class="app">
+  <aside class="rail" id="rail">
+    <div class="marque">
+      <div class="pastille">AC</div>
+      <div class="marque-texte">
+        <h1>Contrôle ANCOLS</h1>
+        <p>Diagnostic des trames · 2021-2025</p>
+      </div>
+      <button type="button" class="bascule-nav" id="bascule-nav" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu
+      </button>
+    </div>
+    <ul class="nav" id="nav">
+      <li class="nav-groupe">Vue d'ensemble</li>
+      <li><button type="button" data-vue="synthese"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>Synthèse</button></li>
+      <li class="nav-groupe">Approches</li>
+      <li><button type="button" data-vue="cartographie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="5" cy="6" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="12" r="2.2"/><path d="M7 6.8 17 11.2M7 17.2 17 12.8"/></svg>Cartographie</button></li>
+      <li><button type="button" data-vue="matrice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3.5 3.5h17v17h-17zM3.5 9.2h17M3.5 14.8h17M9.2 3.5v17M14.8 3.5v17"/></svg>Matrice</button></li>
+      <li><button type="button" data-vue="themes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h7v13H4zM13 5.5h7v6h-7zM13 13.5h7v5h-7z"/></svg>Thèmes &amp; enjeux</button></li>
+      <li><button type="button" data-vue="controles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M3.5 6l1.2 1.2L7 4.8M3.5 12l1.2 1.2L7 10.8M3.5 18l1.2 1.2L7 16.8"/></svg>Contrôles</button></li>
+      <li><button type="button" data-vue="alertes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 21 19.5H3z"/><path d="M12 10v4.5M12 17.2v.3" stroke-linecap="round"/></svg>Alertes</button></li>
+      <li><button type="button" data-vue="fiches"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h8.5L19 8v12.5H6z"/><path d="M14 3.5V8.5h5M9 12.5h7M9 16h7"/></svg>Fiches trames</button></li>
+      <li class="nav-groupe">Préparer</li>
+      <li><button type="button" data-vue="organisation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h6M4 12h10M4 18h16"/><circle cx="13" cy="6" r="1.6"/><circle cx="17" cy="12" r="1.6"/></svg>Organisation &amp; charge</button></li>
+      <li><button type="button" data-vue="inventaire"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="6" rx="7.5" ry="2.8"/><path d="M4.5 6v12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8V6M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></svg>Inventaire des champs</button></li>
+      <li><button type="button" data-vue="etape2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M14 6.5 19.5 12 14 17.5"/></svg>Étape 2 · dictionnaire</button></li>
+    </ul>
+    <div class="rail-pied">
+      <b>Aiguillon Construction</b><br>
+      Trames vierges ANCOLS<br>
+      <span id="pied-date"></span>
+    </div>
+  </aside>
+
+  <main class="scene" id="scene">
+    <header class="entete">
+      <div>
+        <span class="surtitre" id="entete-surtitre"></span>
+        <h2 id="entete-titre"></h2>
+        <p id="entete-texte"></p>
+      </div>
+    </header>
+
+    <!-- ============ SYNTHESE ============ -->
+    <section class="vue" id="vue-synthese" data-titre="Ce que les 22 trames demandent, et où elles se recoupent" data-surtitre="Synthèse"
+      data-texte="Les trames de recueil et les questionnaires du contrôle ont été analysés colonne par colonne pour repérer les données qu'ils mobilisent en commun. Ce diagnostic cadre les chantiers avant de brancher le dictionnaire de données.">
+      <div class="tuiles" id="tuiles"></div>
+      <div class="colonnes-jumelles">
+        <section class="carte">
+          <header><div><h3>À retenir</h3><p>Les cinq constats qui structurent la préparation</p></div></header>
+          <div class="corps"><ol class="constats" id="constats"></ol></div>
+        </section>
+        <div class="pile">
+          <section class="carte">
+            <header><div><h3>Étendue des chantiers</h3><p>Nombre de trames par niveau de charge estimé</p></div>
+              <div class="legende"><span><i class="pastille-legende" style="--fam: var(--accent)"></i>Patrimoine</span><span><i class="pastille-legende" style="--fam: var(--rampe-1)"></i>Gestion locative</span></div></header>
+            <div class="corps"><div class="barres" id="barres-charge"></div></div>
+          </section>
+          <section class="carte">
+            <header><div><h3>Données les plus partagées</h3><p>Nombre de trames qui mobilisent la donnée</p></div></header>
+            <div class="corps"><div class="barres" id="barres-pivots"></div></div>
+          </section>
+        </div>
+      </div>
+      <section class="carte">
+        <header><div><h3>Référentiels communs à constituer avant toute extraction</h3><p>Une seule source par donnée, réinjectée dans chaque trame : c'est ce qui garantit la cohérence que les contrôleurs vont tester.</p></div></header>
+        <div class="corps"><div class="referentiels" id="referentiels"></div></div>
+      </section>
+    </section>
+
+    <!-- ============ CARTOGRAPHIE ============ -->
+    <section class="vue" id="vue-cartographie" data-surtitre="Approche 1 · réseau trames ↔ données" data-titre="Cartographie des données partagées"
+      data-texte="Trames patrimoine à gauche, trames de gestion locative à droite, données pivots au centre, regroupées par famille. Survolez ou touchez une trame ou une donnée pour isoler ses liens.">
+      <div class="barre-filtres">
+        <span class="etiquette-filtre">Afficher</span>
+        <div class="bascule" role="group" aria-label="Seuil de partage">
+          <button type="button" data-seuil="2" aria-pressed="false">2 trames et +</button>
+          <button type="button" data-seuil="3" aria-pressed="true">3 et +</button>
+          <button type="button" data-seuil="5" aria-pressed="false">5 et +</button>
+        </div>
+        <label class="case"><input type="checkbox" id="carto-q" checked> Questionnaires</label>
+        <button type="button" class="bouton-discret" id="carto-reset">Tout afficher</button>
+      </div>
+      <section class="carte">
+        <header><div class="info" id="carto-info"></div></header>
+        <div class="corps">
+          <div class="defile"><svg id="carto-svg" class="dessin dessin-large" role="img" aria-label="Réseau des trames et des données partagées"></svg></div>
+          <div class="legende" id="carto-legende"></div>
+        </div>
+      </section>
+      <section class="carte">
+        <header><div><h3>Proximité entre trames</h3><p>Nombre de données pivots partagées par chaque paire (hors SIREN / raison sociale). Plus la case est foncée, plus les deux trames doivent être produites ensemble.</p></div>
+          <div class="legende" id="prox-legende"></div></header>
+        <div class="corps defile"><table class="chaleur" id="prox"></table></div>
+      </section>
+    </section>
+
+    <!-- ============ MATRICE ============ -->
+    <section class="vue" id="vue-matrice" data-surtitre="Approche 2 · matrice croisée" data-titre="Données pivots × trames"
+      data-texte="Un disque indique que la trame collecte la donnée (sa taille croît avec le nombre de colonnes concernées) ; un anneau indique qu'un questionnaire l'aborde. Cliquez sur une donnée pour ouvrir le détail des colonnes.">
+      <div class="barre-filtres">
+        <div class="recherche"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="mx-q" placeholder="Rechercher une donnée…" aria-label="Rechercher une donnée"></div>
+        <select id="mx-fam" class="large" aria-label="Famille"></select>
+        <label class="case"><input type="checkbox" id="mx-partage" checked> Données partagées seulement</label>
+        <div class="legende pousse"><span><i class="disque d1"></i>1 col.</span><span><i class="disque d2"></i>2-3</span><span><i class="disque d3"></i>4 et +</span><span><i class="anneau"></i>questionnaire</span></div>
+      </div>
+      <section class="carte"><div class="cadre-table haut"><table class="mx" id="mx"></table></div></section>
+    </section>
+
+    <!-- ============ THEMES ============ -->
+    <section class="vue" id="vue-themes" data-surtitre="Approche 3 · lecture par enjeu de contrôle" data-titre="Thèmes de contrôle et trames mobilisées"
+      data-texte="Les contrôleurs croisent les trames par thème. Pour chacun : l'enjeu, les trames à produire de façon cohérente, les données à garder alignées, et les contrôles associés.">
+      <div class="grille-cartes" id="themes"></div>
+    </section>
+
+    <!-- ============ CONTROLES ============ -->
+    <section class="vue" id="vue-controles" data-surtitre="Approche 4 · points de contrôle avant envoi" data-titre="Contrôles de cohérence inter-trames"
+      data-texte="Règles à exécuter avant transmission, qui reprennent les rapprochements que feront les contrôleurs. Bloquant : la trame devient inexploitable. Majeur : une observation est probable. Utile : vérification de vraisemblance.">
+      <div class="barre-filtres">
+        <span class="etiquette-filtre">Filtrer</span>
+        <select id="c-type" aria-label="Type de contrôle"></select>
+        <select id="c-crit" aria-label="Criticité"><option value="">Toutes criticités</option><option value="1">Bloquant</option><option value="2">Majeur</option><option value="3">Utile</option></select>
+        <select id="c-theme" class="large" aria-label="Thème"></select>
+        <select id="c-file" class="large" aria-label="Trame"></select>
+        <button type="button" class="bouton-discret" id="c-reset">Réinitialiser</button>
+        <span class="compte pousse" id="c-compte"></span>
+      </div>
+      <div class="liste" id="ctl-liste"></div>
+    </section>
+
+    <!-- ============ ALERTES ============ -->
+    <section class="vue" id="vue-alertes" data-surtitre="Approche 5 · vigilance" data-titre="Points de vigilance"
+      data-texte="Anomalies dans les modèles eux-mêmes, codifications divergentes, dates de référence et périmètres hétérogènes, données sensibles. Les écarts entre définitions et onglets de recueil ont été détectés automatiquement en comparant chaque en-tête à sa définition.">
+      <section class="carte">
+        <header><div><h3>Périodes et dates de référence</h3><p>Barre : période couverte · losange : photo à une date. Les volumes ne se comparent d'une trame à l'autre qu'avec un tableau de passage.</p></div></header>
+        <div class="corps defile"><svg id="frise" class="dessin dessin-large" role="img" aria-label="Périodes couvertes par trame"></svg></div>
+      </section>
+      <div id="alertes" class="liste large-gap"></div>
+    </section>
+
+    <!-- ============ FICHES ============ -->
+    <section class="vue" id="vue-fiches" data-surtitre="Approche 6 · fiche d'identité par trame" data-titre="Fiches trames"
+      data-texte="Maille, période, sources probables, données hors SI, données partagées, trames voisines, contrôles et alertes de chaque trame.">
+      <div class="fiches">
+        <nav class="carte liste-fiches" id="liste-fiches" aria-label="Trames"></nav>
+        <section class="carte" id="fiche"></section>
+      </div>
+    </section>
+
+    <!-- ============ ORGANISATION ============ -->
+    <section class="vue" id="vue-organisation" data-surtitre="Approche 7 · ordonnancement" data-titre="Organisation et charge"
+      data-texte="Ordre de production conseillé : le socle référentiel d'abord, les questionnaires en dernier pour qu'ils citent des chiffres déjà contrôlés. Les porteurs restent à affecter (colonne vide dans l'export).">
+      <div class="defile"><div class="vagues" id="vagues"></div></div>
+      <section class="carte">
+        <header><div><h3>Plan de charge par trame</h3><p>Charge estimée d'après le nombre de colonnes, la maille, la profondeur d'historique et la part de données hors SI.</p></div>
+          <button type="button" class="bouton" id="orga-copier">Copier le plan (CSV)</button></header>
+        <div class="cadre-table"><table id="orga-table"></table></div>
+        <div id="orga-secours"></div>
+      </section>
+    </section>
+
+    <!-- ============ INVENTAIRE ============ -->
+    <section class="vue" id="vue-inventaire" data-surtitre="Base de travail pour l'étape 2" data-titre="Inventaire des champs"
+      data-texte="Toutes les colonnes des onglets de recueil, avec leur définition ANCOLS et la donnée pivot retenue. C'est la table qui sera rapprochée du dictionnaire de données (aussi disponible dans donnees/inventaire_champs.csv).">
+      <div class="barre-filtres">
+        <div class="recherche"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="inv-q" placeholder="Champ, définition…" aria-label="Rechercher un champ"></div>
+        <select id="inv-file" class="large" aria-label="Trame"></select>
+        <select id="inv-fam" class="large" aria-label="Famille"></select>
+        <select id="inv-st" aria-label="Statut de la définition"><option value="">Tous statuts</option><option value="ok">Définition conforme</option><option value="name_or_col_mismatch">Écart définition / recueil</option><option value="nodef">Sans définition</option></select>
+        <span class="compte" id="inv-compte"></span>
+        <button type="button" class="bouton pousse" id="inv-copier">Copier la sélection (CSV)</button>
+      </div>
+      <div id="inv-secours"></div>
+      <section class="carte"><div class="cadre-table haut"><table id="inv"></table></div></section>
+    </section>
+
+    <!-- ============ ETAPE 2 ============ -->
+    <section class="vue" id="vue-etape2" data-surtitre="Suite · dictionnaire de données" data-titre="Brancher le dictionnaire de données"
+      data-texte="Chaque donnée pivot sera rattachée à son champ source. Les clés de jointure et les données passerelles entre patrimoine et gestion locative passent en premier.">
+      <div class="colonnes-jumelles">
+        <section class="carte"><header><h3>Ce que produira l'étape 2</h3></header><div class="corps"><ol class="constats" id="etape2-produits"></ol></div></section>
+        <section class="carte"><header><h3>À préciser avec le dictionnaire</h3></header><div class="corps"><ul class="constats sans-numero" id="etape2-questions"></ul></div></section>
+      </div>
+      <section class="carte">
+        <header><div><h3>Ordre de rapprochement proposé</h3><p>Clés de jointure, puis données passerelles patrimoine ↔ gestion locative, puis le reste par nombre de trames.</p></div></header>
+        <div class="cadre-table haut"><table id="prio"></table></div>
+      </section>
+    </section>
+  </main>
+</div>
+
+<div class="parametres" role="group" aria-label="Réglages d'affichage">
+  <span class="parametres-titre">Affichage</span>
+  <button type="button" id="bascule-theme" class="bascule-theme" data-effectif="light" aria-label="Passer au thème sombre">
+    <svg class="i-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9 19 19M19 5l-2.1 2.1M7.1 16.9 5 19"/></svg>
+    <svg class="i-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 7 7 0 1 0 20 14.5Z"/></svg>
+  </button>
+</div>
+
+<div class="voile" id="voile"></div>
+<aside class="tiroir" id="tiroir" aria-hidden="true" aria-labelledby="tiroir-titre">
+  <header><div><span class="surtitre" id="tiroir-surtitre"></span><h3 id="tiroir-titre"></h3><p class="doux" id="tiroir-texte"></p></div><button type="button" class="fermer" id="tiroir-fermer" aria-label="Fermer">×</button></header>
+  <div class="corps" id="tiroir-corps"></div>
+</aside>
+
+<div id="infobulle" role="tooltip"></div>
+<div class="toast" id="toast" aria-live="polite"></div>
