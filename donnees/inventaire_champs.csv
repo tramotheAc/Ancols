@@ -1,0 +1,920 @@
+﻿Trame;Onglet;Colonne;Champ;Obligatoire;Donnee_pivot_id;Donnee_pivot;Famille;Definition;Valeurs_attendues;Format;Statut_definition
+11_30_01;1_Foyers;A;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN;9 chiffres;Numérique;ok
+11_30_01;1_Foyers;B;CODE_PATRIMOINE_FOYER;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Numérique;ok
+11_30_01;1_Foyers;C;NOM_PATRIMOINE_FOYER;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_01;1_Foyers;D;CODE_INSEE_COMMUNE;;INSEE;Code INSEE commune;Localisation & zonages;Code INSEE de la commune;5 caractères;Alphanumérique;ok
+11_30_01;1_Foyers;E;ADRESSE_PRINCIPALE;;ADR;Adresse principale;Localisation & zonages;Adresse principale;;Texte;ok
+11_30_01;1_Foyers;F;TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre total de logements;;Numérique;ok
+11_30_01;1_Foyers;G;TOTAL_PLACES;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre total de places;;Numérique;ok
+11_30_01;1_Foyers;H;EQUIVALENT_LOGEMENT;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre d'équivalent-logements (règle 1 pour 1 ou 1 pour 3);;Numérique;ok
+11_30_01;1_Foyers;I;DATE_DE_CONSTRUCTION;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction;;Date jj/mm/aaaa;ok
+11_30_01;1_Foyers;J;DATE_MISE_EN_SERVICE;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Date de mise en service dans le patrimoine;;Date jj/mm/aaaa;ok
+11_30_01;1_Foyers;K;MODE;;PROD;Mode de production / produit;Développement, ventes & finances d'opération;Mode d'entrée dans le patrimoine;Exemples : construction, acquisition-amélioration, acquisition sans amélioration, achat en VEFA,…;Texte;ok
+11_30_01;1_Foyers;L;FINANCEMENT;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Type de financement;Exemples : PLAI, PLUS, PLS,…;Texte;ok
+11_30_01;1_Foyers;M;CONVENTIONNEMENT_APL;;CONV;Conventionnement APL;Caractéristiques du patrimoine;Conventionnement APL;OUI / NON;Texte;ok
+11_30_01;1_Foyers;N;DATE_CONVENTION_APL;;CONV;Conventionnement APL;Caractéristiques du patrimoine;Date de la convention APL, le cas échéant;;Date jj/mm/aaaa;ok
+11_30_01;1_Foyers;O;NATURE;;;;;Nature du programme;FPA, EHPAD, FPH, FJT, résidence autonomie, résidence sociale, CHRS, …;Texte;ok
+11_30_01;1_Foyers;P;TYPE_GESTION;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;"Indiquer le type de gestion : ""Gestion directe' ou ""Gestion par un tiers""";GESTION DIRECTE / GESTION TIERS;Texte;ok
+11_30_01;1_Foyers;Q;GESTIONNAIRE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Si gestion par un tiers indiquer le nom du gestionnaire;Nom du gestionnaire;;ok
+11_30_01;1_Foyers;R;DATE_CONVENTION_GESTION;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Si gestion par un tiers indiquer la date de convention de gestion;Date de la convention;Date jj/mm/aaaa;ok
+11_30_01;1_Foyers;S;LOYER_REDEVANCE;;LOYER;Loyer pratiqué / redevance;Loyers, charges & quittancement;Préciser si loyer ou redevance;LOYER / REDEVANCE;Texte;ok
+11_30_01;1_Foyers;T;MONTANT_REDEVANCE;;LOYER;Loyer pratiqué / redevance;Loyers, charges & quittancement;Montant annuel de la redevance ou du loyer;Montants (€);Numérique;ok
+11_30_01;1_Foyers;U;PCRC_MONTANT_ANNUEL;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Dont montant annuel de PCRC;Montants (€);Numérique;ok
+11_30_01;1_Foyers;V;PCRC_DISPONIBLE;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant PCRC disponible au début de la période de contrôle (a);Montants (€);Numérique;ok
+11_30_01;1_Foyers;W;DOTATIONS_PCRC;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Dotations PCRC sur la période de contrôle (b);Montants (€);Numérique;ok
+11_30_01;1_Foyers;X;DEPENSES_TRAVAUX;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Dépenses réalisées sur la période de contrôle imputés sur la PCRC (c);Montants (€);Numérique;ok
+11_30_01;1_Foyers;Y;STOCK_PCRC;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Stock PCRC disponible au 31/12/2025 (d= a+b-c) formule automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_01;1_Foyers;Z;DATE_REHABILITATION;;REHA;Réhabilitation (date, nature, statut);Caractéristiques du patrimoine;Date de la dernière opération de réhabilitation (travaux d'investissement en multi corps d’état);date de reception des travaux (EXE6);Date jj/mm/aaaa;ok
+11_30_01;1_Foyers;AA;OBSERVATIONS;;;;;Zone libre;;Texte;name_or_col_mismatch
+11_30_02;1_Etat des lieux;A;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;9 chiffres;Numérique;ok
+11_30_02;1_Etat des lieux;B;LIB_AGENCE;;AGENCE;Agence / secteur de gestion;Identifiants & clés de jointure;"Libellé de l'agence en charge de la gestion du patrimoine. Si pas d'agence affilié indiqué ""SIEGE""";NOM AGENCE / SIEGE;Texte;ok
+11_30_02;1_Etat des lieux;C;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_02;1_Etat des lieux;D;CODE_BATIMENT;;BAT;Code bâtiment / escalier;Identifiants & clés de jointure;Code du bâtiment;;Numérique;ok
+11_30_02;1_Etat des lieux;E;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_02;1_Etat des lieux;F;ADRESSE_PRINCIPALE;;ADR;Adresse principale;Localisation & zonages;Adresse principale du groupe immobilier;;Texte;ok
+11_30_02;1_Etat des lieux;G;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_02;1_Etat des lieux;H;CODE_INSEE_COMMUNE;;INSEE;Code INSEE commune;Localisation & zonages;Code INSEE de la commune;5 caractères;Alphanumérique;ok
+11_30_02;1_Etat des lieux;I;EPCI;;EPCI;EPCI;Localisation & zonages;Nom de l'établissement public de coopération intercommunale (EPCI) de rattachement;;Texte;ok
+11_30_02;1_Etat des lieux;J;CODE_DEPARTEMENT;;DEPT;Département;Localisation & zonages;Numéro du département;;Numérique;ok
+11_30_02;1_Etat des lieux;K;ZONE_TENSION;;ZABC;Zonage A/B/C (tension);Localisation & zonages;Zone géographique déterminant le niveau de tension d'une commune;Abis / A / B1 / B2 / C;Alphanumérique;ok
+11_30_02;1_Etat des lieux;L;COPROPRIETE;;COPRO;Copropriété;Caractéristiques du patrimoine;Bâtiment en copropriété;OUI / NON;Texte;ok
+11_30_02;1_Etat des lieux;M;TANTIEME;;COPRO;Copropriété;Caractéristiques du patrimoine;Part des tantièmes en copropriété (si oui à la colonne L);;Numérique;ok
+11_30_02;1_Etat des lieux;N;NOMBRE_LOGEMENTS_INDIVIDUELS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement individuel dans le groupe immobilier;;Numérique;ok
+11_30_02;1_Etat des lieux;O;NOMBRE_LOGEMENTS_COLLECTIFS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement collectif dans le groupe immobilier;;Numérique;ok
+11_30_02;1_Etat des lieux;P;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_02;1_Etat des lieux;Q;NOMBRE_GARAGES;;NATLOT;Nature de lot / annexes;Caractéristiques du patrimoine;Nombre de place de stationnement rattaché (couverte ou non couverte);;Numérique;ok
+11_30_02;1_Etat des lieux;R;NOMBRE_AUTRES_LOTS;;NATLOT;Nature de lot / annexes;Caractéristiques du patrimoine;Nombre d'autres lots type commerce, etc…;;Numérique;ok
+11_30_02;1_Etat des lieux;S;DATE_DE_CONSTRUCTION_BAT;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du bâtiment;;Date jj/mm/aaaa;ok
+11_30_02;1_Etat des lieux;T;DATE_MISE_EN_SERVICE;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Date d'entrée et de mise en service dans le patrimoine;;Date jj/mm/aaaa;ok
+11_30_02;1_Etat des lieux;U;QPV_HORS_QPV;;QPV;QPV / ANRU;Localisation & zonages;Le patrimoine est-il situé en quartier prioritaire ?;QPV / HORS QPV;Texte;ok
+11_30_02;1_Etat des lieux;V;QPV_LIBELLE;;QPV;QPV / ANRU;Localisation & zonages;Si QPV en colonne U, indiquer le nom/libellé du Quartier Prioritaire de la Ville;Nom du QPV;Texte;ok
+11_30_02;1_Etat des lieux;W;LOGEMENT_CONVENTIONNE;;CONV;Conventionnement APL;Caractéristiques du patrimoine;Le logement est il conventionné ou non conventionné;CONVENTIONNE / NON CONVENTIONNE;Texte;ok
+11_30_02;1_Etat des lieux;X;FINANCEMENT_INITIAL;;FINI;Financement initial;Caractéristiques du patrimoine;Type de financement d'origine du patrimoine;Exemples : PLA, PLAI, PLUS, PLS, PLI, HBM, etc…;Texte;ok
+11_30_02;1_Etat des lieux;Y;PSP_CLASSIFICATION;;PSP;Stratégie patrimoniale (PSP);Caractéristiques du patrimoine;Indiquer la famille/catégorie issu du multi-diagnostic PSP, si existant;Exemple : Très bon état / bon état / dégradé / très dégradé….;Alphanumérique;ok
+11_30_02;1_Etat des lieux;Z;PSP_INTERVENTION;;PSP;Stratégie patrimoniale (PSP);Caractéristiques du patrimoine;Indiquer le choix de l'action/intervention retenu issu du dernier PSP en cours;Exemple : Travaux d'entretien (Maintenance/GE), Travaux d'amélioration (Renouvellement de Composant), Rénovation du patrimoine (Réhabilitation), Renforcement parasismique, Démolition, Cessions,…;Alphanumérique;ok
+11_30_02;1_Etat des lieux;AA;DATE_REHABILITATION;;REHA;Réhabilitation (date, nature, statut);Caractéristiques du patrimoine;Indiquer la date de la dernière opération de réhabilitation (travaux d'investissement en multi corps d’état), y compris hors période de contrôle;Date de reception des travaux (EXE6);Date jj/mm/aaaa;ok
+11_30_02;1_Etat des lieux;AB;TRAVAUX;;REHA;Réhabilitation (date, nature, statut);Caractéristiques du patrimoine;Nature des principaux travaux/traitement de la dernière opération de réhabilitation;Zone libre de description (exemple : Réhabilitation thermique, PC, travaux dans les logements, …);Texte;ok
+11_30_02;1_Etat des lieux;AC;DO;;CONT;Contentieux & sinistres;Travaux, maintenance & marchés;Cumul du nombres de dossiers sinistres ouverts en Dommage Ouvrage (DO) sur l'ouvrage;Indiquer le nombre de dossier DO ouvert;Numérique;ok
+11_30_02;1_Etat des lieux;AD;VACANCE;;VAC;Vacance;Caractéristiques du patrimoine;Indiquer le taux de vacance (la part des logements inoccupés rapportée au parc total) globale (soit la vacance technique + la vacance commerciale);Le taux de vacance globale en % est calculé au 1er janvier de l'année en cours;Pourcentage;ok
+11_30_02;1_Etat des lieux;AE;EDL;;REL;Remise en état des logements (EDL / REL);Travaux, maintenance & marchés;Nombre d'états des lieux sortants (y compris ceux sans réparation);Cumulé sur les 5 dernières années;Numérique;ok
+11_30_02;1_Etat des lieux;AF;REL;;REL;Remise en état des logements (EDL / REL);Travaux, maintenance & marchés;Nombre de logements reloués ayant fait l'objet de travaux;Cumulé sur les 5 dernières années;Numérique;ok
+11_30_02;1_Etat des lieux;AG;DEPENSES_REL_NON_RECUP;;REL;Remise en état des logements (EDL / REL);Travaux, maintenance & marchés;Montant total des dépenses en REL (part à la charge du bailleur);Montant en € (euros) ttc cumulé sur les 5 dernières années;Numérique;ok
+11_30_02;1_Etat des lieux;AH;DEPENSES_REL_RECUP;;REL;Remise en état des logements (EDL / REL);Travaux, maintenance & marchés;Montant total des dépenses en REL (part imputable au locataire);Montant en € (euros) ttc cumulé sur les 5 dernières années;Numérique;ok
+11_30_02;1_Etat des lieux;AI;DEPENSES_INVEST;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Montant total des dépenses classifié comptablement en investissement;Montant en € (euros) ttc cumulé sur les 5 dernières années;Numérique;ok
+11_30_02;1_Etat des lieux;AJ;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_02;2_Cartographie énergétique BAT;B;CODE_BATIMENT;;BAT;Code bâtiment / escalier;Identifiants & clés de jointure;Code du bâtiment;;Numérique;ok
+11_30_02;2_Cartographie énergétique BAT;C;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;D;ADRESSE_PRINCIPALE;;ADR;Adresse principale;Localisation & zonages;Adresse principale du groupe immobilier;;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;E;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;F;CODE_INSEE_COMMUNE;;INSEE;Code INSEE commune;Localisation & zonages;Code INSEE de la commune;5 caractères;Alphanumérique;ok
+11_30_02;2_Cartographie énergétique BAT;G;NOMBRE_LOGEMENTS_COLLECTIFS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement collectif dans le bâtiment;;Numérique;ok
+11_30_02;2_Cartographie énergétique BAT;H;DATE_DE_CONSTRUCTION_BAT;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du bâtiment;;Date jj/mm/aaaa;ok
+11_30_02;2_Cartographie énergétique BAT;I;DATE_MISE_EN_SERVICE;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Date d'entrée et de mise en service dans le patrimoine;;Date jj/mm/aaaa;ok
+11_30_02;2_Cartographie énergétique BAT;J;DATE_REHABILITATION;;REHA;Réhabilitation (date, nature, statut);Caractéristiques du patrimoine;Indiquer la date de la dernière opération de réhabilitation (travaux d'investissement en multi corps d’état), y compris hors période de contrôle;date de reception des travaux (EXE6);Date jj/mm/aaaa;ok
+11_30_02;2_Cartographie énergétique BAT;K;MODE_CHAUFFAGE;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Mode de production du chauffage;COLLECTIF / INDIVIDUEL;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;L;VECTEUR_CHAUFFAGE;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Indiquer le vecteur énergétique pour la production de chauffage;Exemples : Gaz de réseau, Gaz propane/butane, fioul,  charbon, électrique, réseau chaleur urbain, géothermie, bois…;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;M;MODE_ECS;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Mode de production de l'Eau Chaude Sanitaire;COLLECTIF / INDIVIDUEL;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;N;VECTEUR_ECS;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Indiquer le vecteur énergétique pour la production d'Eau Chaude Sanitaire;Exemples : Gaz de réseau, Gaz propane/butane, fioul,  charbon, électrique, réseau chaleur urbain, géothermie, bois…;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;O;MODE_DPE;;DPE;DPE / GES;Énergie & équipements;Mode de calcul du DPE (avant 1er juillet 2021 ou après 1er juillet 2021);DPE ANCIEN CALCUL / NOUVEAU CALCUL;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;P;DATE_DPE;;DPE;DPE / GES;Énergie & équipements;Date du DPE collectif;Date d'édition du DPE;Date jj/mm/aaaa;ok
+11_30_02;2_Cartographie énergétique BAT;Q;ADEME;;DPE;DPE / GES;Énergie & équipements;Numéro d'identification inscrit sur le DPE collectif délivré par l'ADEME;13 caractères;Numérique;ok
+11_30_02;2_Cartographie énergétique BAT;R;ETIQUETTE_DPE;;DPE;DPE / GES;Énergie & équipements;La classe énergie, présente sur le diagnostic de performance énergétique (DPE collectif);Lettre de A à G;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;S;CONSO_NRJ_PRIMAIRE;;DPE;DPE / GES;Énergie & équipements;Niveau de consommation en énergie primaire indiqué sur le DPE collectif;En KWhep/m2/an;Numérique;ok
+11_30_02;2_Cartographie énergétique BAT;T;ETIQUETTE_GES;;DPE;DPE / GES;Énergie & équipements;La classe GES, présente sur le diagnostic de performance énergétique (DPE collectif);Lettre de A à G;Texte;ok
+11_30_02;2_Cartographie énergétique BAT;U;VALEUR_GES;;DPE;DPE / GES;Énergie & équipements;Niveau des émissions de gaz à effet de serre (GES);En kg CO2/m2/an;Numérique;ok
+11_30_02;2_Cartographie énergétique BAT;V;CONSO_NRJ_FINALE;;DPE;DPE / GES;Énergie & équipements;Niveau de consommation en énergie finale;En KWhef/m2/an;Numérique;ok
+11_30_02;2_Cartographie énergétique BAT;W;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_02;3_Cartographie énergétique LGT;B;CODE_BATIMENT;;BAT;Code bâtiment / escalier;Identifiants & clés de jointure;Code du bâtiment;;Numérique;name_or_col_mismatch
+11_30_02;3_Cartographie énergétique LGT;C;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;name_or_col_mismatch
+11_30_02;3_Cartographie énergétique LGT;D;ADRESSE_PRINCIPALE;;ADR;Adresse principale;Localisation & zonages;Adresse principale du groupe immobilier;;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;E;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;F;CODE_INSEE_COMMUNE;;INSEE;Code INSEE commune;Localisation & zonages;Code INSEE de la commune;5 caractères;Alphanumérique;ok
+11_30_02;3_Cartographie énergétique LGT;G;CODE_IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement;;Alphanumérique;ok
+11_30_02;3_Cartographie énergétique LGT;H;CODE_IDENTIFIANT_RPLS;;RPLS;Identifiant RPLS;Identifiants & clés de jointure;Identifiant RPLS du logement;10 caractères;Alphanumérique;ok
+11_30_02;3_Cartographie énergétique LGT;I;INDIVIDUEL_COLLECTIF;;INDCOL;Individuel / collectif / étudiant;Caractéristiques du patrimoine;Logement individuel ou logement collectif;COLLECTIF / INDIVIDUEL;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;J;TYPE_LOGEMENT;;TYPO;Typologie (T1…T7);Caractéristiques du patrimoine;Typologie du logement;T1 / T2 / T3 / T4 / T5 / T6 / T7;Alphanumérique;ok
+11_30_02;3_Cartographie énergétique LGT;K;SURF_HABITABLE;;SHAB;Surface habitable;Caractéristiques du patrimoine;Surface habitable du logement;En m2;Numérique;ok
+11_30_02;3_Cartographie énergétique LGT;L;DATE_DE_CONSTRUCTION_BAT;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du bâtiment;;Date jj/mm/aaaa;ok
+11_30_02;3_Cartographie énergétique LGT;M;DATE_MISE_EN_SERVICE;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Date d'entrée et de mise en service dans le patrimoine;;Date jj/mm/aaaa;ok
+11_30_02;3_Cartographie énergétique LGT;N;MODE_CHAUFFAGE;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Mode de production du chauffage;COLLECTIF / INDIVIDUEL;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;O;VECTEUR_CHAUFFAGE;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Indiquer le vecteur énergétique pour la production de chauffage;Exemples : Gaz de réseau, Gaz propane/butane, fioul,  charbon, électrique, réseau chaleur urbain, géothermie, bois…;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;P;MODE_ECS;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Mode de production de l'Eau Chaude Sanitaire;COLLECTIF / INDIVIDUEL;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;Q;VECTEUR_ECS;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Indiquer le vecteur énergétique pour la production d'Eau Chaude Sanitaire;Exemples : Gaz de réseau, Gaz propane/butane, fioul,  charbon, électrique, réseau chaleur urbain, géothermie, bois…;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;R;MODE_DPE;;DPE;DPE / GES;Énergie & équipements;Mode de calcul du DPE (avant 1er juillet 2021 ou après 1er juillet 2021);DPE ANCIEN CALCUL / NOUVEAU CALCUL;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;S;DATE_DPE;;DPE;DPE / GES;Énergie & équipements;Date du DPE;Date d'édition du DPE;Date jj/mm/aaaa;ok
+11_30_02;3_Cartographie énergétique LGT;T;ADEME;;DPE;DPE / GES;Énergie & équipements;Numéro d'identification inscrit sur le DPE délivré par l'ADEME;13 caractères;Numérique;ok
+11_30_02;3_Cartographie énergétique LGT;U;ETIQUETTE_DPE;;DPE;DPE / GES;Énergie & équipements;La classe énergie, présente sur le diagnostic de performance énergétique (DPE);Lettre de A à G;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;V;CONSO_NRJ_PRIMAIRE;;DPE;DPE / GES;Énergie & équipements;Niveau de consommation en énergie primaire indiqué sur le DPE;En KWhep/m2/an;Numérique;ok
+11_30_02;3_Cartographie énergétique LGT;W;ETIQUETTE_GES;;DPE;DPE / GES;Énergie & équipements;La classe GES, présente sur le diagnostic de performance énergétique (DPE);Lettre de A à G;Texte;ok
+11_30_02;3_Cartographie énergétique LGT;X;VALEUR_GES;;DPE;DPE / GES;Énergie & équipements;Niveau des émissions de gaz à effet de serre (GES);En kg CO2/m2/an;Numérique;ok
+11_30_02;3_Cartographie énergétique LGT;Y;CONSO_NRJ_FINALE;;DPE;DPE / GES;Énergie & équipements;Niveau de consommation en énergie finale;En KWhef/m2/an;Numérique;ok
+11_30_02;3_Cartographie énergétique LGT;Z;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;1_Marchés d'entretien;A;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;9 chiffres;Numérique;ok
+11_30_03;1_Marchés d'entretien;B;NATURE_MARCHE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Indiquer l'intitulé ou la nature des marchés en cours sur le patrimoine;Exemples (liste non exhaustive) : espaces verts, propreté-entretien ménager, VMC, robinetterie, compteur d’eau, contrôle d’accès, surveillance-gardiennage, punaise de lit, sécurité incendie / électricité, plomberie, menuiserie, TCE, peintures / marchés d'AMO (type ascenseurs, chauffage ou autres) /  les marchés multiservices;Texte;ok
+11_30_03;1_Marchés d'entretien;C;FORME_MARCHE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Indiquer la forme du marché;"•	marché simple ou ordinaire (prestations récurrentes, dépenses programmables)
+•	accord-cadre à bons de commandes (mono-attributaire ou multi-attributaire)
+•	accord-cadre avec marchés subséquents (mono-attributaire ou multi-attributaire)
+•	marché à tranches
+•	marché de maîtrise d’œuvre";Texte;ok
+11_30_03;1_Marchés d'entretien;D;PERIMETRE_MARCHE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Périmètre géographique du patrimoine couvert par le marché;Exemples : Direction territoriale, agence, arrondissement, secteur, bâtiment, totalité du patrimoine…;Texte;ok
+11_30_03;1_Marchés d'entretien;E;NOMBRE_TOTAL_LOGEMENTS_MARCHE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Nombre de logements couverts par le marché;;Numérique;ok
+11_30_03;1_Marchés d'entretien;F;NOMBRE_TOTAL_EQUIPEMENTS_MARCHE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Le cas échéant le nombre d'équipements couverts par le marché;Exemples : 10 (ascenseurs), (150 chaudières individuelles), (15 chaufferies collectives), (10 aires de jeux),….;Numérique;ok
+11_30_03;1_Marchés d'entretien;G;TITULAIRE_MARCHE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché d'entretien en cours;;Texte;ok
+11_30_03;1_Marchés d'entretien;H;CODE_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;N° ou référence interne du marché d'entretien;;Alphanumérique;ok
+11_30_03;1_Marchés d'entretien;I;DATE_MARCHE_DEBUT;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;date de début de validité du marché;Date de la notification à l'attributaire;Date jj/mm/aaaa;ok
+11_30_03;1_Marchés d'entretien;J;DATE_MARCHE_FIN;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;date de fin de validité du marché;Date de fin en cours;Date jj/mm/aaaa;ok
+11_30_03;1_Marchés d'entretien;K;MONTANT_RECUPERABLE;;CHARGES;Charges récupérables;Loyers, charges & quittancement;Montant initial forfaitaire récupérable (type P2 - petit entretien) du marché;Montant en € (euros) HT/an;Numérique;ok
+11_30_03;1_Marchés d'entretien;L;MONTANT_NON_RECUPERABLE;;CHARGES;Charges récupérables;Loyers, charges & quittancement;Montant initial forfaitaire non récupérable (type P3 - garantie totale) du marché;Montant en € (euros) HT/an;Numérique;ok
+11_30_03;1_Marchés d'entretien;M;MONTANT_CONSO_BPU;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Montant consommé au BPU (si existant) depuis la notification du marché;Montant en € (euros) HT;Numérique;ok
+11_30_03;1_Marchés d'entretien;N;NOMBRE_AVENANT;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Nombre d'avenant au marché signé depuis la date de début du marché;;Numérique;ok
+11_30_03;1_Marchés d'entretien;O;POURCENTAGE_VARIATION_MARCHE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Variation (en %) du montant initial du marché depuis sa notification;Pourcentage (%) d'augmentation ou de diminution du montant initial du marché;Pourcentage;ok
+11_30_03;1_Marchés d'entretien;P;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;2.1_Ascenseurs;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;2.1_Ascenseurs;B;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;2.1_Ascenseurs;C;CODE_BATIMENT;;BAT;Code bâtiment / escalier;Identifiants & clés de jointure;Code du bâtiment;;Alphanumérique;ok
+11_30_03;2.1_Ascenseurs;D;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;2.1_Ascenseurs;E;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre total de logement dans le bâtiment;;Numérique;ok
+11_30_03;2.1_Ascenseurs;F;DATE_DE_CONSTRUCTION_BAT;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du bâtiment;;Date jj/mm/aaaa;ok
+11_30_03;2.1_Ascenseurs;G;CODE_EQUIPEMENT_ASC;;EQUIP;Équipements & contrôles;Énergie & équipements;Indiquer le code ou la référence de l'équipement;;Alphanumérique;ok
+11_30_03;2.1_Ascenseurs;H;NOMBRE_NIVEAUX_ASC;;EQUIP;Équipements & contrôles;Énergie & équipements;Nombre de niveaux déservis par l'équipement;;Numérique;ok
+11_30_03;2.1_Ascenseurs;I;NOM_TITULAIRE_MARCHE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché d'entretien en cours sur l'équipement;;Texte;ok
+11_30_03;2.1_Ascenseurs;J;CODE_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;N° ou référence en interne du marché d'entretien;;Alphanumérique;ok
+11_30_03;2.1_Ascenseurs;K;DATE_MES_EQUIPEMENT_ASC;;EQUIP;Équipements & contrôles;Énergie & équipements;Date de la mise en service de l'équipement ascenseur;Inscrire la date de mise en service de l'équipement en fonction;Date jj/mm/aaaa;ok
+11_30_03;2.1_Ascenseurs;L;OBJECTIFS_SECURITE;;EQUIP;Équipements & contrôles;Énergie & équipements;Objectifs de sécurité (R. 134-3 du CCH) pour les ascenseurs installés avant le 24/08/2000;Date de reception des travaux de mise en sécurité;Date jj/mm/aaaa;ok
+11_30_03;2.1_Ascenseurs;M;DATE_CTQ;;EQUIP;Équipements & contrôles;Énergie & équipements;Contrôle technique obligatoire (R.134-11 à 134-13 du CCH);Date du dernier CTQ (Contrôle technique obligatoire );Date jj/mm/aaaa;ok
+11_30_03;2.1_Ascenseurs;N;NOMBRE_PANNE;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Indiquer le nombre de panne (immobilise la cabine, active les sécurités, nécessite l'intervention de l'ascensoriste) sur l'année N-1;Est égal au nombre de panne sur une année civile (année N-1);Numérique;ok
+11_30_03;2.1_Ascenseurs;O;TAUX_DISPO;;EQUIP;Équipements & contrôles;Énergie & équipements;Taux de disponibilité sur l'année N-1;Est égal à = 100 - [(Somme des périodes d'indisponibilité en minutes/ Année en minutes) *100];Pourcentage;ok
+11_30_03;2.1_Ascenseurs;P;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;2.2_Aires_de_jeux;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;2.2_Aires_de_jeux;B;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;2.2_Aires_de_jeux;C;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;2.2_Aires_de_jeux;D;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;2.2_Aires_de_jeux;E;NOMBRE_TOTAL_EQUIPEMENTS_AIRE;;EQUIP;Équipements & contrôles;Énergie & équipements;Nombres d'aires de jeux dans le groupe immobilier;;Numérique;ok
+11_30_03;2.2_Aires_de_jeux;F;DATE_MES_EQUIPEMENT_AIRE;;EQUIP;Équipements & contrôles;Énergie & équipements;Date de la mise en service de l'équipement « aire de jeux » (si plusieurs aires de jeux, indiquer la date la plus ancienne);Inscrire la date de mise en service de l'équipement en fonction;Date jj/mm/aaaa;ok
+11_30_03;2.2_Aires_de_jeux;G;TITULAIRE_MARCHE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché d'entretien en cours;;Texte;ok
+11_30_03;2.2_Aires_de_jeux;H;CODE_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;N° ou référence en interne du marché d'entretien;;Alphanumérique;ok
+11_30_03;2.2_Aires_de_jeux;I;DATE_DIAGNOSTIC_AIRE;;EQUIP;Équipements & contrôles;Énergie & équipements;Date du dernier diagnostic de sécurité complet réalisé (y compris équipements sportifs et test HIC);;Date jj/mm/aaaa;ok
+11_30_03;2.2_Aires_de_jeux;J;TYPE_SOL;;EQUIP;Équipements & contrôles;Énergie & équipements;Type de sol;Sol amortissant, sol dur, sable, gazon,…;Texte;ok
+11_30_03;2.2_Aires_de_jeux;K;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;B;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;C;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;D;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;E;NOMBRE_LOGEMENTS_INDIVIDUELS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement individuel dans le groupe immobilier;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;F;NOMBRE_LOGEMENTS_COLLECTIFS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement collectif dans le groupe immobilier;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;G;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;H;TITULAIRE_MARCHE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché d'entretien en cours;;Texte;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;I;CODE_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;N° ou référence en interne du marché d'entretien;;Alphanumérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;J;NOMBRE_TOTAL_EQUIPEMENTS;;EQUIP;Équipements & contrôles;Énergie & équipements;Nombre de chaudière individuelle gaz;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;K;NB_VISITES_ENTRETIEN_N-1;;EQUIP;Équipements & contrôles;Énergie & équipements;Nombre de visite d'entretien effective sur N-1;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;L;NB_ABSENCES_VISITES_ENTRETIEN_N-1;;EQUIP;Équipements & contrôles;Énergie & équipements;Nombre d'absences lors du 2ème passage N-1;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;M;NB_VACANTS_REFUS_N-1;;VAC;Vacance;Caractéristiques du patrimoine;Nombre de vacants, refus…N-1;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;N;NB_INTERVENTION_CURATIVE_N-1;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Nombre d'interventions en maintenance curative N-1;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;O;NB_VISITES_ENTRETIEN_N-2;;EQUIP;Équipements & contrôles;Énergie & équipements;Nombre de visite d'entretien effective sur N-2;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;P;NB_ABSENCES_VISITES_ENTRETIEN_N-2;;EQUIP;Équipements & contrôles;Énergie & équipements;Nombre d'absences lors du 2ème passage N-2;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;Q;NB_VACANTS_REFUS_N-2;;VAC;Vacance;Caractéristiques du patrimoine;Nombre de vacants, refus…N-2;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;R;NB_INTERVENTION_CURATIVE_N-2;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Nombre d'interventions en maintenance curative N-2;;Numérique;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;S;PRESENCE_VMC_GAZ;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Présence d'un dispositif de VMC gaz;OUI / NON;Texte;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;T;DATE_VISITE_VMC_GAZ;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Date de la dernière visite annuelle d'entretien préventif de la VMC gaz;;Date jj/mm/aaaa;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;U;DATE_VISITE_Q_VMC_GAZ;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Date de la dernière visite quinquenale de la VMC gaz;;Date jj/mm/aaaa;ok
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;V;NB_INTERVENTION_CURATIVE_VMC_GAZ;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Sur le dispositif VMC gaz quantifier le nombre d'interventions en maintenance curative sur l'année N-1;;Numérique;name_or_col_mismatch
+11_30_03;2.3_Chaudières_ind_et_vmc gaz;W;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;2.4_Chaufferie_coll;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;2.4_Chaufferie_coll;B;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;2.4_Chaufferie_coll;C;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;2.4_Chaufferie_coll;D;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre total de logement dans le groupe immobilier;;Numérique;ok
+11_30_03;2.4_Chaufferie_coll;E;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;2.4_Chaufferie_coll;F;DATE_MES_EQUIPEMENT_CHAUFF;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Date de la mise en service de l'équipement chaufferie collective;Inscrire la date de mise en service de l'équipement (chaudière) en fonction;Date jj/mm/aaaa;ok
+11_30_03;2.4_Chaufferie_coll;G;TITULAIRE_MARCHE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché d'entretien en cours;;Texte;ok
+11_30_03;2.4_Chaufferie_coll;H;CODE_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;N° ou référence en interne du marché d'entretien;;Alphanumérique;ok
+11_30_03;2.4_Chaufferie_coll;I;COMBUSTIBLE_CHAUFF;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Inscrire le type de combustible utilisé;Exemples : Gaz, Fioul, Vapeur,…;Texte;ok
+11_30_03;2.4_Chaufferie_coll;J;USAGE_CHAUFF;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Utilisation d'usage de la chaufferie collective;CHAUFFAGE / CHAUFFAGE-ECS;Texte;ok
+11_30_03;2.4_Chaufferie_coll;K;PUISSANCE_CHAUFF;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Indiquer la puissance de la chaudière;En mégawatt (MW);Numérique;ok
+11_30_03;2.4_Chaufferie_coll;L;DATE_CONTROLE_CHAUFF;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Date des derniers contrôles réglementaire des équipements de la chaufferie;;Date jj/mm/aaaa;ok
+11_30_03;2.4_Chaufferie_coll;M;NB_INTERVENTION_CHAUFF;;CHAUF;Mode & vecteur de chauffage / ECS;Énergie & équipements;Nombre d'interventions en chaufferie pour de la maintenance curative, sur l'année N-1;;Numérique;name_or_col_mismatch
+11_30_03;2.4_Chaufferie_coll;N;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;2.5_Sys_Sécu_Incendie;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;2.5_Sys_Sécu_Incendie;B;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;2.5_Sys_Sécu_Incendie;C;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;2.5_Sys_Sécu_Incendie;D;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre total de logement dans le groupe immobilier;;Numérique;ok
+11_30_03;2.5_Sys_Sécu_Incendie;E;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;2.5_Sys_Sécu_Incendie;F;TITULAIRE_MARCHE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché d'entretien en cours;;Texte;ok
+11_30_03;2.5_Sys_Sécu_Incendie;G;CODE_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;N° ou référence en interne du marché d'entretien;;Alphanumérique;ok
+11_30_03;2.5_Sys_Sécu_Incendie;H;DATE_VISITE_ENTRETIEN;;EQUIP;Équipements & contrôles;Énergie & équipements;Date de la dernière visite d'entretien des équipements SSI, si plusieurs date en fonction des équipements, inscrire la date la plus ancienne;;Date jj/mm/aaaa;ok
+11_30_03;2.5_Sys_Sécu_Incendie;I;REGISTRE_SECURITE;;EQUIP;Équipements & contrôles;Énergie & équipements;Existence d'un registre de sécurité;OUI / NON;Texte;ok
+11_30_03;2.5_Sys_Sécu_Incendie;J;ARCHIVAGE_REGISTRE_SECURITE;;EQUIP;Équipements & contrôles;Énergie & équipements;Préciser le lieux de conservation du registre de sécurité incendie;Exemples : sur site (format cahier), archivage siège (format papier), archivage agence (format papier), format numérique, base prestataire externe, …;Texte;ok
+11_30_03;2.5_Sys_Sécu_Incendie;K;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;2.6_Sys_Ferm_Auto;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;2.6_Sys_Ferm_Auto;B;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;2.6_Sys_Ferm_Auto;C;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;2.6_Sys_Ferm_Auto;D;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;2.6_Sys_Ferm_Auto;E;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre total de logement dans le groupe immobilier;;Numérique;ok
+11_30_03;2.6_Sys_Ferm_Auto;F;NOMBRE_TOTAL_EQUIPEMENTS_SFA;;EQUIP;Équipements & contrôles;Énergie & équipements;Nombre total d'équipement dans le groupe immobilier;;Numérique;ok
+11_30_03;2.6_Sys_Ferm_Auto;G;TYPE_EQUIPEMENT;;EQUIP;Équipements & contrôles;Énergie & équipements;Préciser le type d'équipement;Exemples : Portes Automatiques de Garages, Barrières levantes, Portails coulissants, Portails pivotants, Bornes escamotables,…;Texte;ok
+11_30_03;2.6_Sys_Ferm_Auto;H;DATE_MES_EQUIPEMENT_SFA;;EQUIP;Équipements & contrôles;Énergie & équipements;Date de la mise en service de l'équipement système de fermeture auto;Inscrire la date de mise en service de l'équipement en fonction;Date jj/mm/aaaa;ok
+11_30_03;2.6_Sys_Ferm_Auto;I;TITULAIRE_MARCHE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché d'entretien en cours;;Texte;ok
+11_30_03;2.6_Sys_Ferm_Auto;J;CODE_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;N° ou référence en interne du marché d'entretien;;Alphanumérique;ok
+11_30_03;2.6_Sys_Ferm_Auto;K;DATE_VISITE_ENTRETIEN_SEM_1;;EQUIP;Équipements & contrôles;Énergie & équipements;Préciser la date de la visite d'entretien du semestre 1 de l'année N-1;;Date jj/mm/aaaa;ok
+11_30_03;2.6_Sys_Ferm_Auto;L;DATE_VISITE_ENTRETIEN_SEM_2;;EQUIP;Équipements & contrôles;Énergie & équipements;Préciser la date de la visite d'entretien du semestre 2 de l'année N-1;;Date jj/mm/aaaa;ok
+11_30_03;2.6_Sys_Ferm_Auto;M;TYPE_ENTRETIEN;;EQUIP;Équipements & contrôles;Énergie & équipements;Préciser les prestations du marché d'entretien en cours;ENTRETIEN SIMPLE / ENTRETIEN AVEC GARANTIE TOTALE;Texte;ok
+11_30_03;2.6_Sys_Ferm_Auto;N;NB_PANNES;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Quantifier le nombre de pannes immobilisantes sur les 3 dernières années;;Numérique;ok
+11_30_03;2.6_Sys_Ferm_Auto;O;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;2.7_3D;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;2.7_3D;B;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;2.7_3D;C;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;2.7_3D;D;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;2.7_3D;E;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre total de logement dans le groupe immobilier;;Numérique;ok
+11_30_03;2.7_3D;F;CODE_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;N° ou référence en interne du marché d'entretien;;Alphanumérique;ok
+11_30_03;2.7_3D;G;TITULAIRE_MARCHE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché d'entretien en cours;;Texte;ok
+11_30_03;2.7_3D;H;DATE_VISITE_DERATISATION;;EQUIP;Équipements & contrôles;Énergie & équipements;Date de la dernière visite d'entretien des prestations de Dératisation;;Date jj/mm/aaaa;ok
+11_30_03;2.7_3D;I;DATE_VISITE_DESINSECTISATION;;EQUIP;Équipements & contrôles;Énergie & équipements;Date de la dernière visite d'entretien des prestations de Désinsectisation;;Date jj/mm/aaaa;ok
+11_30_03;2.7_3D;J;DATE_VISITE_DESINFECTION;;EQUIP;Équipements & contrôles;Énergie & équipements;Date de la dernière visite d'entretien des prestations de Désinfection des colonnes vide-ordures;;Date jj/mm/aaaa;ok
+11_30_03;2.7_3D;K;TAUX_VISITE;;EQUIP;Équipements & contrôles;Énergie & équipements;Taux de pénétration sur le programme de la visite annuelle préventive;% du taux de pénétration;Pourcentage;ok
+11_30_03;2.7_3D;L;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;A;CODE_IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement;;Alphanumérique;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;B;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;C;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;D;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;E;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;F;DATE_BAIL;;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;Date de signature du dernier bail signé pour le logement (locataire en place ou locataire précedent);Date bail;Date jj/mm/aaaa;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;G;DATE_CREP;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Indiquer la date du CREP des parties privatives;;Date jj/mm/aaaa;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;H;CLASSIFICATION_CREP;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;"Préciser le niveau de classification du diagnostic (0,1,2,3)
+- Classe 0 = taux de plomb < 1 mg/cm²
+- Classes 1 et 2 = taux de plomb > 1 mg/cm² mais avec des revêtements en bon état ou état d’usage
+- Classe 3 = taux de plomb > 1 mg/cm² et avec des revêtements dégradés";"•	Classe 0
+•	Classe 1 et 2
+•	Classe 3";Texte;ok
+11_30_03;3.1.1_Diagnostics_plomb_CREP;I;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;B;CODE_BATIMENT;;BAT;Code bâtiment / escalier;Identifiants & clés de jointure;Code du bâtiment;;Alphanumérique;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;C;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;D;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;E;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;F;NOMBRE_LOGEMENTS_COLLECTIFS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement collectif dans le groupe immobilier;;Numérique;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;G;DATE_DTA;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Indiquer la date du DTA (Diagnostic Technique Amiante);;Date jj/mm/aaaa;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;H;AMIANTE_LISTE_A;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Indiquer la présence d'amiante liste A;OUI / NON;Texte;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;I;AMIANTE_LISTE_B;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Indiquer la présence d'amiante liste B;OUI / NON;Texte;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;J;DATE_DTA_ACTU;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Indiquer la date de la dernière évaluation de l'état de conservation des matériaux (selon le Décret n°2011-629 du 3 juin 2011 et les arrêtés du 12 décembre 2012), le cas échéant;;Date jj/mm/aaaa;ok
+11_30_03;3.1.2_Diagnostics_amiante_DTA;K;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;A;CODE_IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement;;Alphanumérique;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;B;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;C;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;D;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;E;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;F;DATE_DAPP;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Indiquer la date du Diagnostic Amiante Partie Privative;Date du DAPP;Date jj/mm/aaaa;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;G;AMIANTE_LISTE_A;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Indiquer la présence d'amiante liste A;OUI / NON;Texte;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;H;DATE_DTA_ACTU;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Indiquer la date de la dernière évaluation de l'état de conservation des matériaux (selon le Décret n°2011-629 du 3 juin 2011 et les arrêtés du 12 décembre 2012), le cas échéant;;Date jj/mm/aaaa;ok
+11_30_03;3.1.3_Diagnostics_amiante_DAPP;I;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;3.2_Diagnostics_électricité;A;CODE_IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement;;Alphanumérique;ok
+11_30_03;3.2_Diagnostics_électricité;B;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;3.2_Diagnostics_électricité;C;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;3.2_Diagnostics_électricité;D;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;3.2_Diagnostics_électricité;E;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;3.2_Diagnostics_électricité;F;DATE_INSTALLATION_ELECTRIQUE;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Année de l'installation électrique du logement;Inscrire l'année de mise en service de l'installation électrique en fonction;Date jj/mm/aaaa;ok
+11_30_03;3.2_Diagnostics_électricité;G;DATE_BAIL;;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;Date de signature du dernier bail signé pour le logement (locataire en place ou locataire précedent);Date bail;Date jj/mm/aaaa;ok
+11_30_03;3.2_Diagnostics_électricité;H;DATE_DIAGNOSTIC_ELEC;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Date du derrnier diagnostic électrique ou consuel réalisé;Date ou 0 si absence diagnostic électrique ou Consuel;Date jj/mm/aaaa;ok
+11_30_03;3.2_Diagnostics_électricité;I;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_03;3.3_Diagnostics_gaz;A;CODE_IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement;;Alphanumérique;ok
+11_30_03;3.3_Diagnostics_gaz;B;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_03;3.3_Diagnostics_gaz;C;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_03;3.3_Diagnostics_gaz;D;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_03;3.3_Diagnostics_gaz;E;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_03;3.3_Diagnostics_gaz;F;DATE_INSTALLATION_GAZ;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Année de l'installation gaz du logement;Inscrire l'année  de mise en service de l'installation gaz en fonction;Date jj/mm/aaaa;ok
+11_30_03;3.3_Diagnostics_gaz;G;DATE_BAIL;;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;Date de signature du dernier bail signé pour le logement (locataire en place ou locataire précedent);Date bail;Date jj/mm/aaaa;ok
+11_30_03;3.3_Diagnostics_gaz;H;DATE_DIAGNOSTIC_GAZ;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Date du dernier diagnostic gaz;Date ou 0 si pas de diagnostic gaz;Date jj/mm/aaaa;ok
+11_30_03;3.3_Diagnostics_gaz;I;DATE_QUALIGAZ;;DIAG;Diagnostics réglementaires & installations;Énergie & équipements;Date du dernier Qualigaz le cas échéant;Date ou 0 si pas de Qualigaz;Date jj/mm/aaaa;ok
+11_30_03;3.3_Diagnostics_gaz;J;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_04;1_1_Accessibilité_LGT;A;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;9 chiffres;Numérique;ok
+11_30_04;1_1_Accessibilité_LGT;B;DATE;;;;;Inscrire la date du 31 décembre de la dernière année de la période contrôlée N;31/12/aaaa;Date jj/mm/aaaa;ok
+11_30_04;1_1_Accessibilité_LGT;C;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logements dans le parc (logements familiaux);;Numérique;ok
+11_30_04;1_1_Accessibilité_LGT;D;ACCESSIBLE_UFR;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de logements dans le parc accessibles aux UFR (Utilisateurs de Fauteuil Roulant);;Numérique;ok
+11_30_04;1_1_Accessibilité_LGT;E;ACCESSIBLE_CANNE;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de logements dans le parc accessibles à la canne (considérant qu'un logement accessible canne comporte au maximum trois marches pour accéder de la rue à la porte d’entrée du logement et que le logement est praticable, par des personnes à mobilité réduite, se déplaçant avec des cannes, béquilles, déambulateur);;Numérique;ok
+11_30_04;1_1_Accessibilité_LGT;F;INACCESSIBLE;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;"Nombre de logements identifiés commme ""non accessible"" dans le parc";;Numérique;ok
+11_30_04;1_1_Accessibilité_LGT;G;NON_AUDITE;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de logements non audités dans le parc;;Numérique;ok
+11_30_04;1_1_Accessibilité_LGT;H;OBSERVATIONS;;;;;Zone libre;;Texte;name_or_col_mismatch
+11_30_04;1_2_Accessibilité_FOYER;A;DATE;;;;;Ne pas toucher / formule de calcul automatique (report date 1_1_colonne B);Ne pas toucher / formule de calcul automatique;Date jj/mm/aaaa;ok
+11_30_04;1_2_Accessibilité_FOYER;B;NOMBRE_TOTAL_LOGEMENTS_FOYER;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logements (équivalent logement) dans le parc foyer;;Numérique;ok
+11_30_04;1_2_Accessibilité_FOYER;C;ACCESSIBLE_UFR;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de logements (équivalent logement) dans le parc foyer accessibles aux UFR (Utilisateurs de Fauteuil Roulant);;Numérique;ok
+11_30_04;1_2_Accessibilité_FOYER;D;ACCESSIBLE_CANNE;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de logements (équivalent logement) dans le parc foyer accessibles à la canne (considérant qu'un logement accessible canne comporte au maximum trois marches pour accéder de la rue à la porte d’entrée du logement et que le logement est praticable, par des personnes à mobilité réduite, se déplaçant avec des cannes, béquilles, déambulateur);;Numérique;ok
+11_30_04;1_2_Accessibilité_FOYER;E;INACCESSIBLE;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;"Nombre de logements (équivalent logement) identifiés commme ""non accessible"" dans le parc foyer";;Numérique;ok
+11_30_04;1_2_Accessibilité_FOYER;F;NON_AUDITE;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de logements (équivalent logement) dans le parc foyer non audités;;Numérique;ok
+11_30_04;1_2_Accessibilité_FOYER;G;OBSERVATIONS;;;;;Zone libre;;Texte;name_or_col_mismatch
+11_30_04;2_Adaptation;A;ANNEE;;;;;Inscrire les années couvertes par le contrôle ancols (une année par ligne);Exemple : ligne 2 : 2021, ligne 3 : 2022, ligne 4 : 2023, etc…;Numérique;ok
+11_30_04;2_Adaptation;B;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logements dans le parc (logements familiaux);;Numérique;ok
+11_30_04;2_Adaptation;C;LOGEMENT_ADAPTE;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre total de logements adaptés dans le parc (un logement est ainsi dit adapté lorsque ses caractéristiques correspondent aux capacités et besoins de la personne handicapée ou de la personne âgée et que celle-ci peut y vivre en toute autonomie);;Numérique;ok
+11_30_04;2_Adaptation;D;LOCATAIRE+75;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Nbre de ménages de + 75 ans;;Numérique;ok
+11_30_04;2_Adaptation;E;LOCATAIRE+65;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Nbre de ménages de + 65 ans;;Numérique;ok
+11_30_04;2_Adaptation;F;MUTATION;;PUBLIC;Publics & mutations;Occupants, ménages & attributions;Nombre de mutations internes dans l'année de personnes de plus de 65 ans faisant suite à problématique d'adaptation du logement;;Numérique;ok
+11_30_04;2_Adaptation;G;DEMANDE_ADAPTATION;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de demandes d'adaptation de logements reçus par l'organisme;;Numérique;ok
+11_30_04;2_Adaptation;H;REFUS_ADAPTATION;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de refus suite à demande d'adaptation de logement;;Numérique;ok
+11_30_04;2_Adaptation;I;TRAVAUX_ADAPTATION;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de logements ayant fait l’objet de travaux d’adaptation dans l'année en réponse à une demande de locataire;;Numérique;ok
+11_30_04;2_Adaptation;J;DOSSIER+12MOIS;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Nombre de dossiers d’adaptation en attente (de réponse ou de travaux) 12 mois après la demande;;Numérique;ok
+11_30_04;2_Adaptation;K;DELAI_DEMANDE;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Délai de traitement moyen (en jours) d'un dossier de demande;;Numérique;ok
+11_30_04;2_Adaptation;L;MONTANT_TRAVAUX_ADAPTATION;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Montant des travaux d’adaptation réalisés;Montant en € (euros);Numérique;ok
+11_30_04;2_Adaptation;M;DEGREVEMENTS_TFPB_DEMANDES;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Montant des dégrèvements de TFPB demandés en raison de la réalisation de travaux PMR (article 1391 C du CGI);Montant en € (euros);Numérique;ok
+11_30_04;2_Adaptation;N;DEGREVEMENTS_TFPB_OBTENUS;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Montant des dégrèvements de TFPB obtenus en raison de la réalisation de travaux PMR (article 1391 C du CGI);Montant en € (euros);Numérique;ok
+11_30_04;2_Adaptation;O;LABEL;;ACCESS;Accessibilité & adaptation;Caractéristiques du patrimoine;Inscrire si vous bénéficiez d'une labélisation aux actions liées à l’adaptation du logement au vieillissement et au handicap;exemples : quali’HLM, HS2 Habitat Sécurité Santé, HSS Habitat Senior Service,…;Texte;ok
+11_30_04;2_Adaptation;P;OBSERVATIONS;;;;;Zone libre;;Texte;name_or_col_mismatch
+11_30_05;1_Synthèse évolution patrimoine;A;ANNEE;;;;;Ne pas toucher (Période couverte par le contrôle de l'ANCOLS), une année par ligne;Exemple : 2022, 2023, 2024…;Texte;ok
+11_30_05;1_Synthèse évolution patrimoine;B;PARC_1er_JANVIER;;MOUV;Mouvements de parc;Développement, ventes & finances d'opération;Nombre de logements familiaux au 1er janvier;Ne completer que la 1ère case (B2);Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;C;MOA_DIRECTE;;PROD;Mode de production / produit;Développement, ventes & finances d'opération;Nombre de logements familiaux mis en service en production neuve en maitrise d'ouvage directe;;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;D;NOMBRE_LOGEMENTS_VEFA;;PROD;Mode de production / produit;Développement, ventes & finances d'opération;Nombre de logements familiaux mis en service en VEFA;;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;E;AA;;PROD;Mode de production / produit;Développement, ventes & finances d'opération;Nombre de logements familiaux mis en service Acquisition-Amélioration;;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;F;AUTRES;;PROD;Mode de production / produit;Développement, ventes & finances d'opération;Autres acquisitions (hors AA);;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;G;VENTES;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Nombre de logements vendus;;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;H;TRANSFORMATION_USAGE+;;MOUV;Mouvements de parc;Développement, ventes & finances d'opération;Transformation d'usage augmentant la taille du parc;;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;I;TRANSFORMATION_USAGE-;;MOUV;Mouvements de parc;Développement, ventes & finances d'opération;Transformation d'usage diminuant la taille du parc;;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;J;DEMOLITION;;MOUV;Mouvements de parc;Développement, ventes & finances d'opération;Nombre de logements démolis;;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;K;PARC_31_DECEMBRE;;MOUV;Mouvements de parc;Développement, ventes & finances d'opération;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_05;1_Synthèse évolution patrimoine;L;EVOLUTION;;MOUV;Mouvements de parc;Développement, ventes & finances d'opération;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Pourcentage;ok
+11_30_05;1_Synthèse évolution patrimoine;M;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_05;2_Opérations nouvelles;A;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;9 chiffres;Numérique;ok
+11_30_05;2_Opérations nouvelles;B;MOA;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Désignation du maître d'ouvrage;;Texte;ok
+11_30_05;2_Opérations nouvelles;C;STATUT_OP_NOUVELLE;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Désigné le statut de l'opération;Réalisée / En cours / En projet;Texte;ok
+11_30_05;2_Opérations nouvelles;D;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_05;2_Opérations nouvelles;E;CODE_BATIMENT;;BAT;Code bâtiment / escalier;Identifiants & clés de jointure;Code du bâtiment;;Alphanumérique;ok
+11_30_05;2_Opérations nouvelles;F;NOM-OP;;OPE;Code / nom d'opération;Identifiants & clés de jointure;Nom de l'opération / du programme;;Texte;name_or_col_mismatch
+11_30_05;2_Opérations nouvelles;G;ZONAGE;;Z123;Zonage 1/2/3 (loyers, plafonds, RLS);Localisation & zonages;Indiquer le zonage (1, 1bis, 2 ou 3) qui intervient dans le calcul de la réduction de loyer de solidarité (RLS);1, 1bis, 2 ou 3;Alphanumérique;ok
+11_30_05;2_Opérations nouvelles;H;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune;;Texte;ok
+11_30_05;2_Opérations nouvelles;I;CODE_INSEE_COMMUNE;;INSEE;Code INSEE commune;Localisation & zonages;Code INSEE de la commune;;Numérique;ok
+11_30_05;2_Opérations nouvelles;J;EPCI;;EPCI;EPCI;Localisation & zonages;Nom de l'établissement public de coopération intercommunale (EPCI) de rattachement;;Texte;ok
+11_30_05;2_Opérations nouvelles;K;DEPARTEMENT;;DEPT;Département;Localisation & zonages;Mention du département;;Texte;ok
+11_30_05;2_Opérations nouvelles;L;OP_ANRU;;QPV;QPV / ANRU;Localisation & zonages;Précisez s'il s'agit d'une d'une opération dans le cadre d'un programme de rénovation urbaine;Oui / Non;Texte;ok
+11_30_05;2_Opérations nouvelles;M;DATE_DEPOT_PC;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Date du dépôt du permis de construire (ou date prévisionnelle de dépôt);;Date jj/mm/aaaa;ok
+11_30_05;2_Opérations nouvelles;N;DATE_OBTENTION_PC;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Date d'obtention du permis de construire;;Date jj/mm/aaaa;ok
+11_30_05;2_Opérations nouvelles;O;DATE_AGREMENT;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Date d’obtention de l’agrément de financement (indicateur CUS Nouvelle génération);;Date jj/mm/aaaa;ok
+11_30_05;2_Opérations nouvelles;P;NOMBRE_LOGEMENTS_COLLECTIFS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement collectif;;Numérique;ok
+11_30_05;2_Opérations nouvelles;Q;NOMBRE_LOGEMENTS_INDIVIDUELS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement individuel;;Numérique;ok
+11_30_05;2_Opérations nouvelles;R;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_05;2_Opérations nouvelles;S;T1;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement T1;;Numérique;ok
+11_30_05;2_Opérations nouvelles;T;T2;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement T2;;Numérique;ok
+11_30_05;2_Opérations nouvelles;U;T3;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement T3;;Numérique;ok
+11_30_05;2_Opérations nouvelles;V;T4;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement T4;;Numérique;ok
+11_30_05;2_Opérations nouvelles;W;T5;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement T5;;Numérique;ok
+11_30_05;2_Opérations nouvelles;X;T6;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement T6;;Numérique;ok
+11_30_05;2_Opérations nouvelles;Y;T7;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement T7;;Numérique;ok
+11_30_05;2_Opérations nouvelles;Z;PLUS_FINANCEMENT;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Nombre de logement PLUS;;Numérique;ok
+11_30_05;2_Opérations nouvelles;AA;PLAI_FINANCEMENT;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Nombre de logement PLAI;;Numérique;ok
+11_30_05;2_Opérations nouvelles;AB;PLS_FINANCEMENT;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Nombre de logement PLS;;Numérique;ok
+11_30_05;2_Opérations nouvelles;AC;AUTRES_FINANCEMENT;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Nombre de logement financement autres (PLI, FP, …);;Numérique;ok
+11_30_05;2_Opérations nouvelles;AD;TYPE_PRODUIT;;PROD;Mode de production / produit;Développement, ventes & finances d'opération;MO=maitrise d'ouvage directe ou AA=acquis amélioré ou VEFA;MO / AA / VEFA;Texte;ok
+11_30_05;2_Opérations nouvelles;AE;SURFACE_HABITABLE;;SHAB;Surface habitable;Caractéristiques du patrimoine;Surface habitable de l'opération;En m2;Numérique;ok
+11_30_05;2_Opérations nouvelles;AF;SURFACE_UTILE;;SUTIL;Surface utile / corrigée / quittancée;Caractéristiques du patrimoine;Surface utile de l'opération;En m2;Numérique;ok
+11_30_05;2_Opérations nouvelles;AG;PRIX_REVIENT_PREVI_CA;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Prix de revient prévisionnel validé par le CA;En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AH;CHARGE_FONCIERE;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Montant de la charge foncière (pour les VEFA indiquer le montant global payé au promoteur en charge foncière);En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AI;PRIX_REVIENT_FIN_BAT;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Prix de revient final du bâtiment;En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AJ;PRIX_REVIENT_FIN_HONO;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Prix de revient final des honoraires;En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AK;PRIX_REVIENT_FIN_TOTAL;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Prix de revient final total (prenant en compte le cas échéant des coûts de démolition rattachés);En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AL;PRIX_REVIENT_FIN_TOTAL_LGT;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_05;2_Opérations nouvelles;AM;PRIX_REVIENT_FIN_TOTAL_SU;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_05;2_Opérations nouvelles;AN;PRÊT_PRINCIPAL;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant du prêt principal;En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AO;PRÊT_AUTRES;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant autres prêts;En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AP;SUBVENTIONS;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant des subventions;En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AQ;FONDS_PROPRES;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant des fonds propres;En € ttc;Numérique;ok
+11_30_05;2_Opérations nouvelles;AR;TOTAL_FINANCEMENT;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_05;2_Opérations nouvelles;AS;MARCHE_NATURE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Nature du titulaire du marché (entreprise générale, corps d'états séparés);Entreprise générale, corps d'états séparés, …;Texte;ok
+11_30_05;2_Opérations nouvelles;AT;MARCHE_TITULAIRE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du titulaire du marché de travaux (gros œuvre en cas de corps d'état séparé), si VEFA indiquer le nom du promoteur;;Texte;ok
+11_30_05;2_Opérations nouvelles;AU;MOE;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom du Maître d'œuvre (si désigné);;Texte;ok
+11_30_05;2_Opérations nouvelles;AV;CONTENTIEUX;;CONT;Contentieux & sinistres;Travaux, maintenance & marchés;Indiquer si l'opértation a donné lieu à contentieux ?;Oui / Non;Texte;ok
+11_30_05;2_Opérations nouvelles;AW;DATE_OS;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Date d'OS travaux (Gros œuvre) n°1;;Date jj/mm/aaaa;ok
+11_30_05;2_Opérations nouvelles;AX;DELAI;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Délai contractuel du chantier;En jours;Numérique;ok
+11_30_05;2_Opérations nouvelles;AY;DATE_RECEPTION_TRAVAUX;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Indiquer la date de reception des travaux (prévue ou réelle);Date de reception réelle (EXE6) / Date de reception prévisionnelle (si en cours ou en projet);Date jj/mm/aaaa;ok
+11_30_05;2_Opérations nouvelles;AZ;DATE_MISE_EN_LOC;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Date de la première mise en location d'un logement;;Date jj/mm/aaaa;ok
+11_30_05;2_Opérations nouvelles;BA;TAUX_OCCUPATION;;VAC;Vacance;Caractéristiques du patrimoine;Indiquer le taux de remplissage de location au moment de la mise en location;%;Pourcentage;ok
+11_30_05;2_Opérations nouvelles;BB;TAUX_LOYER_APRES_TX;;LMAX;Loyer maximum / taux de loyer;Loyers, charges & quittancement;Indiquer le taux de loyer après travaux (si plusieurs conventions APL sur une même opération, indiquer la principale, celle regroupant le plus de logement sur l'opération);;Numérique;ok
+11_30_05;2_Opérations nouvelles;BC;LABEL_NRJ;;DPE;DPE / GES;Énergie & équipements;Label Performance énergétique;NF Habitat, label Effinergie, Le label E+C, label BBCA,…;Texte;ok
+11_30_05;2_Opérations nouvelles;BD;ANRU;;QPV;QPV / ANRU;Localisation & zonages;Indiquer s'il s'agit d'un programme défini dans le cadre d'une convention avec l'ANRU (reconstitution de l'offre);ANRU / Hors ANRU;Texte;ok
+11_30_05;2_Opérations nouvelles;BE;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_05;3_Réhabilitation;A;REHA_ETAT;;REHA;Réhabilitation (date, nature, statut);Caractéristiques du patrimoine;Indiquer le statut de la réhabilitation;Réalisée / En cours / En projet;Texte;ok
+11_30_05;3_Réhabilitation;B;ANRU;;QPV;QPV / ANRU;Localisation & zonages;Indiquer s'il s'agit d'un programme de travaux défini dans le cadre d'une convention avec l'ANRU;ANRU / Hors ANRU;Texte;ok
+11_30_05;3_Réhabilitation;C;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_05;3_Réhabilitation;D;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_05;3_Réhabilitation;E;DATE_DE_CONSTRUCTION;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction d'origine;;Date jj/mm/aaaa;ok
+11_30_05;3_Réhabilitation;F;NOMBRE_LOGEMENTS_INDIVIDUELS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement individuel;;Numérique;ok
+11_30_05;3_Réhabilitation;G;NOMBRE_LOGEMENTS_COLLECTIFS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Nombre de logement collectif;;Numérique;ok
+11_30_05;3_Réhabilitation;H;NOMBRE_TOTAL_LOGEMENTS;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_05;3_Réhabilitation;I;DATE_CAO_MARCHE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Indiquer la date d'attribution du marché de travaux;La date de passage en CAO;Date jj/mm/aaaa;ok
+11_30_05;3_Réhabilitation;J;DATE_NOTIF_MARCHE;;MARCHEI;Caractéristiques des marchés;Travaux, maintenance & marchés;Indiquer la date de notification du marché de travaux;La date du courrier de notification du marché à l'entreprise;Date jj/mm/aaaa;ok
+11_30_05;3_Réhabilitation;K;DATE_OS;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Indiquer la date de l'ordre de service travaux (prévue ou réelle);Date OS 1;Date jj/mm/aaaa;ok
+11_30_05;3_Réhabilitation;L;DATE_RECEPTION_TRAVAUX;;REHA;Réhabilitation (date, nature, statut);Caractéristiques du patrimoine;Indiquer la date de reception des travaux (prévue ou réelle);Date de reception réelle (EXE6) / Date de reception prévisionnelle;Date jj/mm/aaaa;ok
+11_30_05;3_Réhabilitation;M;TRAVAUX_REHABILITATION_PC;;REHA;Réhabilitation (date, nature, statut);Caractéristiques du patrimoine;Indiquer les principales caractéristiques des travaux de réhabilitation (parties communes et enveloppe);;Texte;ok
+11_30_05;3_Réhabilitation;N;TRAVAUX_REHABILITATION_PP;;REHA;Réhabilitation (date, nature, statut);Caractéristiques du patrimoine;Indiquer les principales caractéristiques des travaux de réhabilitation à l'intérieur des logements, le cas échéant;;Texte;ok
+11_30_05;3_Réhabilitation;O;PRIX_PREVI;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Total du prix de revient prévisionnel;En € ttc, global avec révision;Numérique;ok
+11_30_05;3_Réhabilitation;P;DATE_CA;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Date CA validant le PRP;;Date jj/mm/aaaa;ok
+11_30_05;3_Réhabilitation;Q;PRIX_REVIENT;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Total du prix de revient final pour les réhabilitations réalisées;En € ttc, global avec révision;Numérique;ok
+11_30_05;3_Réhabilitation;R;PRIX_REVIENT_FIN_TOTAL_NRJ;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Dont total TTC correspondant spécifiquement à des travaux de rénovation thermique (soumis à un taux de tva de 5,5%);En € ttc;Numérique;ok
+11_30_05;3_Réhabilitation;S;PRIX_REVIENT_LOG;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_05;3_Réhabilitation;T;DATE_CLOTURE;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Indiquer la date de décision de clôture de l'opération pour les réhabilitations réalisées;;Date jj/mm/aaaa;ok
+11_30_05;3_Réhabilitation;U;SU_AVANT_TX;;SUTIL;Surface utile / corrigée / quittancée;Caractéristiques du patrimoine;Indiquer la surface utile avant travaux;;Numérique;ok
+11_30_05;3_Réhabilitation;V;SU_APRES_TX;;SUTIL;Surface utile / corrigée / quittancée;Caractéristiques du patrimoine;Indiquer la surface utile après travaux;;Numérique;ok
+11_30_05;3_Réhabilitation;W;TAUX_LOYER_AVANT_TX;;LMAX;Loyer maximum / taux de loyer;Loyers, charges & quittancement;Indiquer le taux de loyer avant travaux (si plusieurs conventions APL sur une même opération, indiquer la principale, celle regroupant le plus de logement sur l'opération);;Numérique;ok
+11_30_05;3_Réhabilitation;X;TAUX_LOYER_APRES_TX;;LMAX;Loyer maximum / taux de loyer;Loyers, charges & quittancement;Indiquer le taux de loyer après travaux (si plusieurs conventions APL sur une même opération, indiquer la principale, celle regroupant le plus de logement sur l'opération);;Numérique;ok
+11_30_05;3_Réhabilitation;Y;PRÊT_PRINCIPAL;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant du prêt principal;En € ttc;Numérique;ok
+11_30_05;3_Réhabilitation;Z;PRÊT_AUTRES;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant autres prêts;En € ttc;Numérique;ok
+11_30_05;3_Réhabilitation;AA;SUBVENTIONS;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant des subventions;En € ttc;Numérique;ok
+11_30_05;3_Réhabilitation;AB;FONDS_PROPRES;;FINOP;Plan de financement d'opération;Développement, ventes & finances d'opération;Montant des fonds propres;En € ttc;Numérique;ok
+11_30_05;3_Réhabilitation;AC;TOTAL_FINANCEMENT;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Ne pas toucher / formule de calcul automatique;Ne pas toucher / formule de calcul automatique;Numérique;ok
+11_30_05;3_Réhabilitation;AD;DPE_AVANT_TX;;DPE;DPE / GES;Énergie & équipements;si le DPE bâtiment n’a pas été réalisé avant ou après, indiqué le DPE au logement. En cas de DPE au logement hétérogène, indiqué le DPE majoritaire au sein du bâtiment;Lettre de A à G;Texte;ok
+11_30_05;3_Réhabilitation;AE;DPE_APRES_TX;;DPE;DPE / GES;Énergie & équipements;si le DPE bâtiment n’a pas été réalisé avant ou après, indiqué le DPE au logement. En cas de DPE au logement hétérogène, présenté l’évolution la plus représentative à l’issue de l’opération;Lettre de A à G;Texte;ok
+11_30_05;3_Réhabilitation;AF;PSP_REHA;;PSP;Stratégie patrimoniale (PSP);Caractéristiques du patrimoine;Indiquer si la réhabilitation est inscrite dans le cadre du PSP en cours;OUI / NON;Texte;ok
+11_30_05;3_Réhabilitation;AG;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_05;4_OP en contentieux;A;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_05;4_OP en contentieux;B;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_05;4_OP en contentieux;C;ADRESSE_PRINCIPALE;;ADR;Adresse principale;Localisation & zonages;Adresse principale du groupe immobilier;;Texte;ok
+11_30_05;4_OP en contentieux;D;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune;;Texte;ok
+11_30_05;4_OP en contentieux;E;NATURE_DESORDRES;;CONT;Contentieux & sinistres;Travaux, maintenance & marchés;Indiquer la nature des désordres (les contentieux techniques concernés sont ceux ayant donné lieu a minima à une mise en demeure de l'entreprise (après réception), ou à une mise en œuvre de l'assurance dommage ouvrage);;Texte;ok
+11_30_05;4_OP en contentieux;F;DISPOSITIONS_DESORDRES;;CONT;Contentieux & sinistres;Travaux, maintenance & marchés;Dispositions prises par l'organisme;;Texte;ok
+11_30_05;4_OP en contentieux;G;ETAT_PROCEDURES;;CONT;Contentieux & sinistres;Travaux, maintenance & marchés;Etat d'avancement des procédures;;Texte;ok
+11_30_05;4_OP en contentieux;H;JUGEMENT_DATE;;CONT;Contentieux & sinistres;Travaux, maintenance & marchés;Indiquer la date des jugements intervenus;;Date jj/mm/aaaa;ok
+11_30_05;4_OP en contentieux;I;JUGEMENT_DECISION;;CONT;Contentieux & sinistres;Travaux, maintenance & marchés;Indiquer les decisions des jugements intervenus;;Texte;ok
+11_30_05;4_OP en contentieux;J;INCIDENCE_FIN_CONTENTIEUX;;CONT;Contentieux & sinistres;Travaux, maintenance & marchés;Précisez les incidence financière pour l'organisme (constatée, à venir);;Texte;ok
+11_30_05;4_OP en contentieux;K;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_05;5_OP abandonnés;A;NOM_OP;;OPE;Code / nom d'opération;Identifiants & clés de jointure;Nom de l'opération / du programme;;Texte;ok
+11_30_05;5_OP abandonnés;B;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune;;Texte;ok
+11_30_05;5_OP abandonnés;C;NATURE_PROJET;;PROD;Mode de production / produit;Développement, ventes & finances d'opération;Nature du projet;A définir : Démolition, Neuf en VEFA, neuf en MOD, acquisition-amélioration, réhabilitation,…;Texte;ok
+11_30_05;5_OP abandonnés;D;DATE_PROJET;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Date du projet;;Date jj/mm/aaaa;ok
+11_30_05;5_OP abandonnés;E;DATE_ABANDON;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Date d'abandon;;Date jj/mm/aaaa;ok
+11_30_05;5_OP abandonnés;F;ETAT_PROJET;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Décrire succintement l'état d'avancement du projet au moment de son abandon;;Texte;ok
+11_30_05;5_OP abandonnés;G;DESCRIPTIF_ABANDON;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Décrire succintement les raisons de l'abandon du projet;;Texte;ok
+11_30_05;5_OP abandonnés;H;DEPENSES_ENGAGEES;;PRIX;Prix de revient & dépenses d'opération;Développement, ventes & finances d'opération;Indiquer les dépenses engagées;Montant des dépenses engagées sur le projet;Numérique;ok
+11_30_05;5_OP abandonnés;I;OBSERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_06;1_Ventes_unité;A;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;Identifiant de 9 chiffres;Numérique;ok
+11_30_06;1_Ventes_unité;B;CODE_IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement;;Alphanumérique;ok
+11_30_06;1_Ventes_unité;C;CODE_IDENTIFIANT_RPLS;;RPLS;Identifiant RPLS;Identifiants & clés de jointure;Identifiant RPLS du logement;10 caractères;Alphanumérique;ok
+11_30_06;1_Ventes_unité;D;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier;;Alphanumérique;ok
+11_30_06;1_Ventes_unité;E;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier;;Texte;ok
+11_30_06;1_Ventes_unité;F;ADRESSE_PRINCIPALE;;ADR;Adresse principale;Localisation & zonages;Adresse principale du groupe immobilier;;Texte;ok
+11_30_06;1_Ventes_unité;G;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du groupe immobilier;;Texte;ok
+11_30_06;1_Ventes_unité;H;DEPARTEMENT;;DEPT;Département;Localisation & zonages;Nom du département du groupe immobilier;;Texte;ok
+11_30_06;1_Ventes_unité;I;INDIVIDUEL_COLLECTIF;;INDCOL;Individuel / collectif / étudiant;Caractéristiques du patrimoine;Logement individuel ou logement collectif;INDIVIDUEL / COLLECTIF;Texte;ok
+11_30_06;1_Ventes_unité;J;SURF_HABITABLE;;SHAB;Surface habitable;Caractéristiques du patrimoine;Surface habitable du logement;En m2;Numérique;ok
+11_30_06;1_Ventes_unité;K;TYPE_LOGEMENT;;TYPO;Typologie (T1…T7);Caractéristiques du patrimoine;Typologie du logement;T1, T2, T3, T4,…;Alphanumérique;ok
+11_30_06;1_Ventes_unité;L;LOGEMENT_CONVENTIONNE;;CONV;Conventionnement APL;Caractéristiques du patrimoine;S'agit-il de logement conventionné ou non conventionné;CONVENTIONNE / NON CONVENTIONNE;Texte;ok
+11_30_06;1_Ventes_unité;M;ANRU_QPV;;QPV;QPV / ANRU;Localisation & zonages;Le logement est-il situé en quartier prioritaire ou zone de rénovation urbaine;OUI / NON;Texte;ok
+11_30_06;1_Ventes_unité;N;ETIQUETTE_DPE;;DPE;DPE / GES;Énergie & équipements;La classe énergie, présente sur le diagnostic de performance énergétique (DPE);Lettre de A à G;Texte;ok
+11_30_06;1_Ventes_unité;O;DATE_DE_CONSTRUCTION_PRG;;DCONS;Date de construction;Caractéristiques du patrimoine;Date de la construction du programme immobilier (si plusieurs dates inscrire la plus ancienne);;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;P;DATE_MISE_EN_SERVICE;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Date de la mise en service;;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;Q;FINANCEMENT_INITIAL;;FINI;Financement initial;Caractéristiques du patrimoine;Type de financement d'origine du patrimoine;Exemples : PLA, HLMO, ILN, etc…;Texte;ok
+11_30_06;1_Ventes_unité;R;LOYER_PRATIQUE;;LOYER;Loyer pratiqué / redevance;Loyers, charges & quittancement;Le dernier taux de loyer pratiqué;Prix/m² mensuel;Numérique;ok
+11_30_06;1_Ventes_unité;S;DATE_BAIL;;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;"Indiquer : 
+- si vente à l'occupant : la date du bail dans le logement du locataire en place
+- si vente du logement vacant : la date du bail de l'acquéreur dans un autre logement de l'organisme";;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;T;DATE_VACANCE;;VAC;Vacance;Caractéristiques du patrimoine;A précisé sauf si logement vendu au locataire occupant;Date ou 0 si logement vendu au locataire occupant;Date jj/mm/aaaa ou Numérique;ok
+11_30_06;1_Ventes_unité;U;NOM_ACQUEREUR;;PERS;Nom de la personne (locataire, candidat, acquéreur);Identifiants & clés de jointure;Nom de l'acquéreur;;Texte;ok
+11_30_06;1_Ventes_unité;V;QUALITE_ACQUEREUR;;ACQ;Profil de l'acquéreur;Occupants, ménages & attributions;La qualité de l'acquéreur;"Occupant
+Locataire du bailleur
+Locataire d'un autre organisme HLM
+Descendant locataire occupant
+Ascendant du locataire occupant
+Personne extérieure
+Personne morale
+Autre à préciser";Texte;ok
+11_30_06;1_Ventes_unité;W;REVENU_IMPOSABLE N-2;;RESS;Ressources du ménage (RFR, revenus);Occupants, ménages & attributions;Revenu imposable (si personne physique);Montant en € (euros);Numérique;ok
+11_30_06;1_Ventes_unité;X;REVENU_MENSUEL;;RESS;Ressources du ménage (RFR, revenus);Occupants, ménages & attributions;Revenu mensuel (si personne physique);Montant en € (euros);Numérique;ok
+11_30_06;1_Ventes_unité;Y;CATEGORIE_MENAGE;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Indiquer la catégorie du ménage;Catégorie 1, Catégorie 2, Catégorie 3, Catégorie 4, Catégorie 5, Catégorie 6;Alphanumérique;ok
+11_30_06;1_Ventes_unité;Z;DETERMINATION_GRILLE_PRIX_LGT_OCCUPE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Détermination du prix de vente (selon la grille de prix) logement occupé;Montant en € (euros);Numérique;ok
+11_30_06;1_Ventes_unité;AA;DETERMINATION_GRILLE_PRIX_LGT_LIBRE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Détermination du prix de vente (selon la grille de prix) logement libre;Montant en € (euros);Numérique;ok
+11_30_06;1_Ventes_unité;AB;DATE_GRILLE_PRIX;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Indiquer la date de la grille de prix validée;;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;AC;DATE_VENTE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Indiquer la date de signature de l'acte de vente;;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;AD;PRIX_VENTE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Prix de cession (uniquement le montant de la vente du logement, hors annexe associée (garage, parking,…) le cas échéant;Montant en € (euros);Numérique;ok
+11_30_06;1_Ventes_unité;AE;VNC;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;La valeur nette comptable (VNC);Montant en € (euros);Numérique;ok
+11_30_06;1_Ventes_unité;AF;PLUS_VALUE_MOINS_VALUE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Plus-value de cession (ou moins-value);Montant en € (euros);Numérique;ok
+11_30_06;1_Ventes_unité;AG;EMPRUNT;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Part d'emprunt restant dû;Montant en € (euros);Numérique;ok
+11_30_06;1_Ventes_unité;AH;DATE_CA;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Préciser la date de décision du CA de la mise en vente;Date CA;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;AI;DATE_CUS_OU_DECISION_PREFET;;GOUV;Décisions de gouvernance & autorisations;Développement, ventes & finances d'opération;Indiquer la date de la décision du Préfet ou de la CUS dans laquelle figure le plan de mise en vente;;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;AJ;PUB_JOURNAL;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Préciser le nom du journal local suppport de la publicité;;Texte;ok
+11_30_06;1_Ventes_unité;AK;PUB_JOURNAL_DATE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Préciser la date de l'insertion dans le journal;;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;AL;PUB_SITE_INTERNET;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Préciser le nom du site internet suppport de la publicité;;Texte;ok
+11_30_06;1_Ventes_unité;AM;DATE_DE_L'INSERTION;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Préciser la date de l'insertion de la publicité du site internet;;Date jj/mm/aaaa;ok
+11_30_06;1_Ventes_unité;AN;OBERVATIONS;;;;;Zone libre;;Texte;ok
+11_30_07;carac op. accession synthese;A;code de l'opération;;OPE;Code / nom d'opération;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;B;nom de l'opération;;OPE;Code / nom d'opération;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;C;nature (VEFA accession, PSLA, BRS, ANRU, lots libres);;PROD;Mode de production / produit;Développement, ventes & finances d'opération;;;;nodef
+11_30_07;carac op. accession synthese;D;EPCI;;EPCI;EPCI;Localisation & zonages;;;;nodef
+11_30_07;carac op. accession synthese;E;Code commune;;INSEE;Code INSEE commune;Localisation & zonages;;;;nodef
+11_30_07;carac op. accession synthese;F;Libellé commune;;COMMUNE;Commune (libellé);Localisation & zonages;;;;nodef
+11_30_07;carac op. accession synthese;G;zonage (A, B1, B2 ou C);;ZABC;Zonage A/B/C (tension);Localisation & zonages;;;;nodef
+11_30_07;carac op. accession synthese;H;Date de livraison (si projet, date prévisionnelle);;DMES;Date / année de mise en service;Caractéristiques du patrimoine;;;;nodef
+11_30_07;carac op. accession synthese;I;nombre lots construits;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;;;;nodef
+11_30_07;carac op. accession synthese;J;dont nombre lots libres;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;;;;nodef
+11_30_07;carac op. accession synthese;K;maître d'ouvrage;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;L;associé 1 si SCCV;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;M;nb parts associé 1  si SCCV;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;N;associé 2 si SCCV;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;O;nb parts associé 2  si SCCV;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;P;associé 3 si SCCV;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;Q;nb parts associé 3  si SCCV;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession synthese;R;mandataire;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_07;carac op. accession au lgt;A;RAISON_SOCIALE;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Nom du bailleur social;;Texte;ok
+11_30_07;carac op. accession au lgt;B;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;;Numérique;ok
+11_30_07;carac op. accession au lgt;C;CODE_OPERATION;;OPE;Code / nom d'opération;Identifiants & clés de jointure;Code de l'opération / du programme immobilier;;Texte;ok
+11_30_07;carac op. accession au lgt;D;NOM_OPERATION;;OPE;Code / nom d'opération;Identifiants & clés de jointure;Nom de l'opération / du programme immobilier;;Texte;ok
+11_30_07;carac op. accession au lgt;E;PRODUIT;;PROD;Mode de production / produit;Développement, ventes & finances d'opération;Produit de l'opération;"Valeurs strictes à renseigner :
+PSLA, BRS, ANRU ou VEFA";Texte;ok
+11_30_07;carac op. accession au lgt;F;IDENTIFIANT_LOGEMENT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement;;Texte;ok
+11_30_07;carac op. accession au lgt;G;TYPE_LOGEMENT;;TYPO;Typologie (T1…T7);Caractéristiques du patrimoine;Type de logement;"Exemples : 
+T1
+T2
+T3
+T4
+T5
+Etc…";Texte;ok
+11_30_07;carac op. accession au lgt;H;DEPARTEMENT;;DEPT;Département;Localisation & zonages;Département du logement;;Numérique;ok
+11_30_07;carac op. accession au lgt;I;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Commune du logement;;Texte;ok
+11_30_07;carac op. accession au lgt;J;ZONAGE_ABC;;ZABC;Zonage A/B/C (tension);Localisation & zonages;"Zonage ABC :
+Zone tendue : A, A bis et B1
+Zone en déséquilibre :  B2
+Zone non tendue : C";"Valeurs strictes à renseigner :
+A, A bis, B1, B2 ou C";Texte;ok
+11_30_07;carac op. accession au lgt;K;ZONE_GEOGRAPHIQUE;;ZGEO;Zone géographique p/i/r/d;Localisation & zonages;Zone géographique;"Valeurs strictes à renseigner :
+p (pour Paris)
+idf (pour Ile de France)
+r (pour autres régions)";Texte;ok
+11_30_07;carac op. accession au lgt;L;SURF_HABITABLE;;SHAB;Surface habitable;Caractéristiques du patrimoine;Surface habitable du logement;En m²;Numérique;ok
+11_30_07;carac op. accession au lgt;M;SURF_UTILE;;SUTIL;Surface utile / corrigée / quittancée;Caractéristiques du patrimoine;Surface utile du logement;En m²;Numérique;ok
+11_30_07;carac op. accession au lgt;N;SURF_ANNEXES;;NATLOT;Nature de lot / annexes;Caractéristiques du patrimoine;Surface des annexes;;Numérique;ok
+11_30_07;carac op. accession au lgt;O;DATE_LIVRAISON;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Date de livraison du logement;;Date;ok
+11_30_07;carac op. accession au lgt;P;DATE_CONTRAT_RESERVATION;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Date du contrat de réservation ou du contrat préliminaire;;Date;ok
+11_30_07;carac op. accession au lgt;Q;DATE_CONTRAT_VENTE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Date du contrat de vente;;Date;ok
+11_30_07;carac op. accession au lgt;R;PRIX_VENTE_HT;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Prix de vente en € H.T.;En euros;Numérique;ok
+11_30_07;carac op. accession au lgt;S;PRIX_VENTE_TTC;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Prix de vente en € T.T.C.;En euros;Numérique;ok
+11_30_07;carac op. accession au lgt;T;MARGE_OPERATEUR;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Marge de l'opérateur;En euros;Numérique;ok
+11_30_07;carac op. accession au lgt;U;NOM_ACCEDANT;;PERS;Nom de la personne (locataire, candidat, acquéreur);Identifiants & clés de jointure;Nom de l'accédant à la propriété;;Texte;ok
+11_30_07;carac op. accession au lgt;V;TYPE_ACQUEREUR;;ACQ;Profil de l'acquéreur;Occupants, ménages & attributions;Type d'acquéreur;"Exemples :
+Bailleur
+Investisseur
+Occupant
+Autre";Texte;ok
+11_30_07;carac op. accession au lgt;W;ORIGINE_ACQUEREUR;;ACQ;Profil de l'acquéreur;Occupants, ménages & attributions;Origine de l'acquéreur;"Exemples : 
+Locataire du parc privé
+Locataire du parc social du bailleur
+Locataire du parc social autre bailleur
+Hébergé
+Propriétaire
+Non connu";Texte;ok
+11_30_07;carac op. accession au lgt;X;MNT_RFR_N-2;;RESS;Ressources du ménage (RFR, revenus);Occupants, ménages & attributions;Montant du revenu fiscal de référence année - 2;En euros;Numérique;ok
+11_30_07;carac op. accession au lgt;Y;CATEGORIE_MENAGE;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Catégorie du ménage ou nombre de personnes destinées à occuper le logement (avant 2024);"Catégorie de ménage :
+1 (= Une personne seule )
+ou 2 (= Deux personnes ne comportant aucune pers. à charge à l'exclusion des jeunes ménages ou une pers. seule en situation de handicap)
+ou 3 (= Trois personnes ou une pers. seule avec une pers. à charge ou jeune ménage sans personne à charge ou deux pers. dont au moins une est en situation de handicap)
+ou 4 (= Quatre personnes ou une pers. seule avec deux pers. à charge ou trois pers. dont au moins une est en situation de handicap)
+ou 5 (= Cinq personnes ou une pers. seule avec trois pers. à charge ou quatre pers. dont au moins une est en situation de handicap)
+ou 6 (= Six personnes ou une pers. seule avec quatre pers. à charge ou cinq pers. dont au moins une est en situation de handicap)
+ou si > 6 indiquer le nombre
+
+NB : Avant 2024 indiquer le nombre de personne destinées à occuper le logement";Numérique;ok
+11_30_07;carac op. accession au lgt;Z;DATE_CONVENTION;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Date de la convention passée avec l'ETAT pour le PSLA;2020;Numérique;ok
+11_30_07;carac op. accession au lgt;AA;PRIX_DE_VENTE_CONVENTION;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Prix de vente indiqué dans la convention PSLA;En euros;Numérique;ok
+11_30_07;carac op. accession au lgt;AB;DATE_CONTRAT_LOCATION_ACCESSION;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Date du contrat de location-accession;;Date;ok
+11_30_07;carac op. accession au lgt;AC;DATE_LEVEE_OPTION;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Date levée d'option (si PSLA);;Date;ok
+11_30_07;carac op. accession au lgt;AD;MNT_REDEVANCE_LOCATIVE_INITIALE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Redevance (part locative) initiale €/mensuelle;En euros;Numérique;ok
+11_30_07;carac op. accession au lgt;AE;MNT_REDEVANCE_ACQUISITIVE;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Redevance (part acquisitive) €/mensuelle;En euros;Numérique;ok
+11_30_07;carac op. accession au lgt;AF;DATE_ACQUISITION_DES_DROITS_REELS;;VENTE;Ventes (dates, prix, volumes);Développement, ventes & finances d'opération;Date d'acquisition des droits réels;;Date;ok
+11_30_08;Etat des lieux;A;RAISON SOCIALE;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;;;;nodef
+11_30_08;Etat des lieux;B;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;;;;nodef
+11_30_08;Etat des lieux;C;AGENCE;;AGENCE;Agence / secteur de gestion;Identifiants & clés de jointure;;;;nodef
+11_30_08;Etat des lieux;D;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;;;;nodef
+11_30_08;Etat des lieux;E;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;;;;nodef
+11_30_08;Etat des lieux;F;ADRESSE_PRINCIPALE;;ADR;Adresse principale;Localisation & zonages;;;;nodef
+11_30_08;Etat des lieux;G;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;;;;nodef
+11_30_08;Etat des lieux;H;EPCI;;EPCI;EPCI;Localisation & zonages;;;;nodef
+11_30_08;Etat des lieux;I;CODE_DEPARTEMENT;;DEPT;Département;Localisation & zonages;;;;nodef
+11_30_08;Etat des lieux;J;NOMBRE_LOGEMENTS_INDIVIDUELS détenu par le BAILLEUR;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;K;NOMBRE_LOGEMENTS_COLLECTIFS détenu par le BAILLEUR;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;L;NOMBRE_TOTAL_LOGEMENTS détenu par le BAILLEUR;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;M;NOMBRE_TOTAL_LOGEMENTS de la COPROPRIETE;;NBLGT;Nombre de logements / parc;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;N;DATE_DE_CONSTRUCTION;;DCONS;Date de construction;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;O;DATE_MISE_EN_SERVICE;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;P;QPV ou Hors QPV;;QPV;QPV / ANRU;Localisation & zonages;;;;nodef
+11_30_08;Etat des lieux;Q;Syndic externe ?;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_08;Etat des lieux;R;Le cas échéant, nom du syndic externe;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;;;;nodef
+11_30_08;Etat des lieux;S;Existence d'un carnet d'entretien ?;;COPRO;Copropriété;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;T;Existence d'un diagnostic technique global ?;;COPRO;Copropriété;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;U;Le cas échéant, date de réalisation du diagnostic technique global;;COPRO;Copropriété;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;V;Existence d'un plan pluriannuel de travaux ?;;COPRO;Copropriété;Caractéristiques du patrimoine;;;;nodef
+11_30_08;Etat des lieux;W;Le cas échéant, date de réalisation du plan pluriannuel de travaux;;COPRO;Copropriété;Caractéristiques du patrimoine;;;;nodef
+12_30_01;Recueil de données;A;RAISON_SOCIALE;oui;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Nom du bailleur social;;Texte;ok
+12_30_01;Recueil de données;B;SIREN;oui;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;;Texte;ok
+12_30_01;Recueil de données;C;LIB_AGENCE;;AGENCE;Agence / secteur de gestion;Identifiants & clés de jointure;Libellé de l'agence;;Texte;ok
+12_30_01;Recueil de données;D;LIB_SECTEUR;;AGENCE;Agence / secteur de gestion;Identifiants & clés de jointure;Libellé du secteur;;Texte;ok
+12_30_01;Recueil de données;E;NOM_PRENOM_CANDIDAT;oui;PERS;Nom de la personne (locataire, candidat, acquéreur);Identifiants & clés de jointure;Nom et prénom du candidat;;Texte;ok
+12_30_01;Recueil de données;F;NUM_COMPTE_LOCATAIRE;oui;CPT;Compte locataire;Identifiants & clés de jointure;Numéro du compte locataire;;Texte;ok
+12_30_01;Recueil de données;G;NUMERO_UNIQUE;oui;PERS;Nom de la personne (locataire, candidat, acquéreur);Identifiants & clés de jointure;Numéro unique du SNE;;Alphanumérique;ok
+12_30_01;Recueil de données;H;TYPE_LOCATAIRE;oui;MENAGE;Composition du ménage;Occupants, ménages & attributions;Type de locataire;Physique ou Morale;Texte;ok
+12_30_01;Recueil de données;I;CATEGORIE_MENAGE;oui;MENAGE;Composition du ménage;Occupants, ménages & attributions;Catégorie du ménage au moment de l'examen de la demande;"1 (= Une personne seule )
+ou 2 (= Deux personnes ne comportant aucune pers. à charge à l'exclusion des jeunes ménages ou une pers. seule en situation de handicap)
+ou 3 (= Trois personnes ou une pers. seule avec une pers. à charge ou jeune ménage sans personne à charge ou deux pers. dont au moins une est en situation de handicap)
+ou 4 (= Quatre personnes ou une pers. seule avec deux pers. à charge ou trois pers. dont au moins une est en situation de handicap)
+ou 5 (= Cinq personnes ou une pers. seule avec trois pers. à charge ou quatre pers. dont au moins une est en situation de handicap)
+ou 6 (= Six personnes ou une pers. seule avec quatre pers. à charge ou cinq pers. dont au moins une est en situation de handicap)
+ou si > 6 indiquer le nombre";Numérique;ok
+12_30_01;Recueil de données;J;SITUATION_FAMILIALE;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Situation familiale;"Exemples :
+Couple
+Isolé
+Jeune ménage";Texte;ok
+12_30_01;Recueil de données;K;NB_PERSONNES_A_CHARGE;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Nombre de personnes à charge dans le foyer (y compris enfant à naître);;Numérique;ok
+12_30_01;Recueil de données;L;SITUATION_PROFESSIONNELLE;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Situation professionnelle du locataire au moment de l'examen de la demande;"Exemples : 
+Agents publics
+Apprenti
+Artisan, commerçant, profession libérale
+Autre
+CDD, Stage, Intérim
+CDI
+CDI (ou fonctionnaire)
+Chômage
+Etudiant";Texte;ok
+12_30_01;Recueil de données;M;DATE_DEPOT_DEMANDE;oui;CAL;Passage en CALEOL;Occupants, ménages & attributions;Date de dépôt de la demande de logement;;Date jj/mm/aaaa;ok
+12_30_01;Recueil de données;N;IDENTIFIANT_CALEOL;oui;CAL;Passage en CALEOL;Occupants, ménages & attributions;Identifiant de la CALEOL;;Texte;ok
+12_30_01;Recueil de données;O;DATE_CALEOL;oui;CAL;Passage en CALEOL;Occupants, ménages & attributions;Date de la CALEOL;;Date jj/mm/aaaa;ok
+12_30_01;Recueil de données;P;DECISION_DE_LA_CAL;oui;CAL;Passage en CALEOL;Occupants, ménages & attributions;Décision de tous les canditats proposés pour chacun des logements suite au passage de la demande en CALEOL (=à minima une ligne par candidat par logement). Se référer aux valeurs de l'article du R441-3 du CCH.;"ATTRIBUTION
+ATTRIBUTION SOUS CONDITION SUSPENSIVE
+ATTRIBUTION EN CLASSANT
+NON-ATTRIBUTION
+REJET POUR IRRECEVABILITE";Texte;ok
+12_30_01;Recueil de données;Q;NUMERO_RANG;oui;CAL;Passage en CALEOL;Occupants, ménages & attributions;"Numéro du rang de priorité classant les candidats qui se voient attribuer un logement.
+Si un seul candidat est proposé pour un logement, le numéro de rang est égal à 1.";1, 2, 3, 4, 5, 6, etc…;Numérique;ok
+12_30_01;Recueil de données;R;RETOUR_CANDIDAT;oui;CAL;Passage en CALEOL;Occupants, ménages & attributions;Retour du candidat suite au passage CALEOL : accepté ou refusé ou sans objet;ACCEPTE ou REFUSE ou SANS OBJET;Texte;ok
+12_30_01;Recueil de données;S;COMMENTAIRE_CALEOL;;;;;Commentaire possible de la CALEOL;;Texte;ok
+12_30_01;Recueil de données;T;ANNEE_RFR_RETENU_POUR_CALEOL;oui;RESS;Ressources du ménage (RFR, revenus);Occupants, ménages & attributions;Dernière année du revenu fiscal de référence retenu pour CALEOL;;Numérique;ok
+12_30_01;Recueil de données;U;MNT_RFR_RETENU_POUR_CALEOL;oui;RESS;Ressources du ménage (RFR, revenus);Occupants, ménages & attributions;Montant du dernier revenu fiscal de référence retenu pour CALEOL;En euros;Numérique;ok
+12_30_01;Recueil de données;V;MNT_RFR_N-2;oui;RESS;Ressources du ménage (RFR, revenus);Occupants, ménages & attributions;Montant du revenu fiscal de référence (par rapport à l'année de l'attribution - 2);En euros;Numérique;ok
+12_30_01;Recueil de données;W;COTATION_DEMANDE;;PUBLIC;Publics & mutations;Occupants, ménages & attributions;Cotation de la demande : nombre de points donnés à l'attributaire;;Numérique;ok
+12_30_01;Recueil de données;X;MUTATION_INTERNE;oui;PUBLIC;Publics & mutations;Occupants, ménages & attributions;Attribution suite à mutation interne ?;1 pour Oui et 0 pour Non;Numérique;ok
+12_30_01;Recueil de données;Y;DALO;oui;PUBLIC;Publics & mutations;Occupants, ménages & attributions;L'attributaire est-il reconnu DALO (Droit au Logement Opposable) ?;1 pour Oui et 0 pour Non;Numérique;ok
+12_30_01;Recueil de données;Z;PUBLIC_PRIORITAIRE;oui;PUBLIC;Publics & mutations;Occupants, ménages & attributions;L'attributaire est-il labellisé public prioritaire (Hors DALO) ?;1 pour Oui et 0 pour Non;Numérique;ok
+12_30_01;Recueil de données;AA;PUBLIC_PREMIER_QUARTILE;oui;PLAF;Plafonds de ressources & quartiles;Occupants, ménages & attributions;Attribution public premier quartile ?;1 pour Oui et 0 pour Non;Numérique;ok
+12_30_01;Recueil de données;AB;PUBLIC_RELOGEMENT_ANRU;oui;QPV;QPV / ANRU;Localisation & zonages;Attribution relogement ANRU (Agence Nationale pour la Rénovation Urbaine) ?;1 pour Oui et 0 pour Non;Numérique;ok
+12_30_01;Recueil de données;AC;PUBLIC_RELOGEMENT_ORCOD;oui;PUBLIC;Publics & mutations;Occupants, ménages & attributions;Attribution relogement ORCOD (Opération de requalification des copropriétés dégradées) ?;1 pour Oui et 0 pour Non;Numérique;ok
+12_30_01;Recueil de données;AD;DATE_SIGNATURE_BAIL;oui;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;Date de signature du bail du logement attribué;;Date jj/mm/aaaa;ok
+12_30_01;Recueil de données;AE;DATE_ENTREE_LIEUX;oui;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;Date d'entrée dans le logement attribué;;Date jj/mm/aaaa;ok
+12_30_01;Recueil de données;AF;IDENTIFIANT_LOT;oui;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du lot du logement;;Texte;ok
+12_30_01;Recueil de données;AG;CODE_PATRIMOINE;oui;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du patrimoine du logement;;Texte;ok
+12_30_01;Recueil de données;AH;NOM_PATRIMOINE;oui;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du patrimoine du logement;;Texte;ok
+12_30_01;Recueil de données;AI;CODE_INSEE;;INSEE;Code INSEE commune;Localisation & zonages;Code de la commune INSEE;;Texte;ok
+12_30_01;Recueil de données;AJ;COMMUNE;oui;COMMUNE;Commune (libellé);Localisation & zonages;Commune du logement;;Texte;ok
+12_30_01;Recueil de données;AK;ZONE_GEOGRAPHIQUE;oui;ZGEO;Zone géographique p/i/r/d;Localisation & zonages;Zone géographique;"p : Paris
+i : IdF
+r : autres régions
+d : dom
+PLI : Abis, A, B1, B2 / C ou B1 DOM";Texte;ok
+12_30_01;Recueil de données;AL;ZONAGE_ABC;oui;ZABC;Zonage A/B/C (tension);Localisation & zonages;"Zonage ABC réparti en zone géographique : 
+Zone tendue : A, A bis et B1
+Zone en déséquilibre :  B2
+Zone non tendue : C";A, A bis, B1, B2 ou C;Texte;ok
+12_30_01;Recueil de données;AM;QPV_HORS_QPV;oui;QPV;QPV / ANRU;Localisation & zonages;Le logement est-il situé en quartier prioritaire ?;QPV ou Hors QPV;Texte;ok
+12_30_01;Recueil de données;AN;TYPE_LOGEMENT;oui;TYPO;Typologie (T1…T7);Caractéristiques du patrimoine;Type de logement;"Exemples : 
+T1
+T2
+T3
+T4
+T5
+Etc…";Texte;ok
+12_30_01;Recueil de données;AO;INDIVIDUEL_COLLECTIF_ETUDIANT;oui;INDCOL;Individuel / collectif / étudiant;Caractéristiques du patrimoine;Lot individuel ou collectif ou étudiant ?;Individuel ou Collectif ou Etudiant;Texte;ok
+12_30_01;Recueil de données;AP;LOGT_CONV_OU_NON;oui;CONV;Conventionnement APL;Caractéristiques du patrimoine;Logement conventionné (1) ou non conventionné (0);1 ou 0;Numérique;ok
+12_30_01;Recueil de données;AQ;CLASSE_DPE;oui;DPE;DPE / GES;Énergie & équipements;Diagnostic de performance énergétique du logement;A, B, C, D, E, F ou G;Texte;ok
+12_30_01;Recueil de données;AR;FINANCEMENT_INITIAL;oui;FINI;Financement initial;Caractéristiques du patrimoine;Catégorie de financement initial du logement;Exemples : HLMO, ILN, etc…;Texte;ok
+12_30_01;Recueil de données;AS;FINANCEMENT_CUS;oui;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Catégorie de financement CUS du logement;PLAI, PLUS, PLS ou PLI;Texte;ok
+12_30_01;Recueil de données;AT;RESERVATAIRE_DESIGNATAIRE;oui;CAL;Passage en CALEOL;Occupants, ménages & attributions;Réservataire au profit duquel le logement est attribué. Pour les logements encore gérés en stock (défense nationale, sécurité intérieure, etc…), si le logement a été repris pour un tour, indiquez le réservataire au profit duquel s’est fait l’attribution. Dans le cadre de l’avant dernier alinéa de l’article L.441-1 du CCH (transmission au maire du logement en QPV dont la présentation a échoué), c’est le désignataire à qui a été cédé ce droit qui doit être inscrit.;"Le réservataire désignataire doit toujours être renseigné. Il s'agit d'indiquer le réservataire au profit duquel s'est fait l'attribution du logement. Si gestion déléguée ou en flux au titre de quel contingent l'attribution est-elle réalisée ? Si contingent bailleur, indiquer contingent propre.
+
+Valeurs à utiliser de façon stricte :
+A- Contingent propre
+B- Contingent préfet fonctionnaires et agents publics de l'Etat
+C- Contingent préfet prioritaires (hors fonctionnaires et agents publics de l'Etat)
+D- Contingent commune
+E- Action Logement
+F- Contingent ministère
+G- Contingent département
+H- Contingent région
+I- Contingent EPCI
+J- Contingent autres réservataires";Texte;ok
+12_30_01;Recueil de données;AU;IDENTIFIANT_LOGEMENT_RPLS;oui;RPLS;Identifiant RPLS;Identifiants & clés de jointure;Identifiant du logement RPLS;;Texte;ok
+12_30_01;Recueil de données;AV;VALEUR_QUARTILE_EPCI;oui;EPCI;EPCI;Localisation & zonages;Plafond des ressources des demandeurs du 1er quartile par EPCI (valeur arrêté ministériel);;Numérique;ok
+12_30_01;Recueil de données;AW;NUM_SIRET_EPCI;oui;EPCI;EPCI;Localisation & zonages;Numéro de SIRET de l'EPCI de la commune du logement attribué;;Numérique;ok
+12_30_01;Recueil de données;AX;MNT_RESSOURCES_MENSUELLES_FOYER_A_L_ATTRIBUTION;oui;RESS;Ressources du ménage (RFR, revenus);Occupants, ménages & attributions;Montant des ressources mensuelles du foyer à l'attribution;En euros;Numérique;ok
+12_30_01;Recueil de données;AY;NB_UNITE_CONSOMMATION;oui;MENAGE;Composition du ménage;Occupants, ménages & attributions;Nombre d'unités de consommation;"1 UC (= pour le premier adulte du ménage)
+ou 0,5 UC (= pour les autres personnes de 14 ans ou plus)
+ou 0,3 UC (= pour les enfants de moins de 14 ans)";Numérique;ok
+12_30_01;Recueil de données;AZ;MNT_LOYER_MENSUEL_APPLIQUE_A_L_ATTRIBUTION;oui;LOYER;Loyer pratiqué / redevance;Loyers, charges & quittancement;Montant mensuel du loyer (hors charges) du logement appliqué à l'attribution;En euros;Numérique;ok
+12_30_01;Recueil de données;BA;MNT_CHARGES_MENSUEL_APPLIQUE_A_L_ATTRIBUTION;oui;CHARGES;Charges récupérables;Loyers, charges & quittancement;Montant mensuel des charges du logement appliqué à l'attribution;En euros;Numérique;ok
+12_30_01;Recueil de données;BB;APL/AL_ESTIMEE;oui;AIDES;APL / AL / RLS;Loyers, charges & quittancement;Montant de l'aide au logement (APL ou AL) estimée lors de la demande;En euros;Numérique;ok
+12_30_01;Recueil de données;BC;RLS_ESTIMEE;oui;AIDES;APL / AL / RLS;Loyers, charges & quittancement;Montant de la réduction de loyer de solidarité estimée lors de la demande;En euros;Numérique;ok
+12_30_01;Recueil de données;BD;TX_EFFORT_RETENU_EN_CALEOL;;CAL;Passage en CALEOL;Occupants, ménages & attributions;Taux d'effort retenu en CALEOL : rapport entre la somme des dépenses liées à l'habitation principale (loyers et charges) et les revenus mensuels du locataire [loyer + charges – (APL estimée + RLS estimée)] / revenu mensuel du locataire;En %;Numérique;ok
+12_30_01;Recueil de données;BE;RESTE_A_VIVRE_RETENU_EN_CALEOL;;CAL;Passage en CALEOL;Occupants, ménages & attributions;Montant du reste à vivre retenu en CALEOL en euros par jour par UC : montant des ressources mensuelles du foyer - [montant du loyer mensuel du logement + charges – (APL estimée + RLS estimée)] / 30,5 / nb UC;En € / par jour / par UC;Numérique;ok
+12_30_02;Recueil de données;A;RAISON_SOCIALE;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Nom du bailleur social;;Texte;ok
+12_30_02;Recueil de données;B;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;;Texte;ok
+12_30_02;Recueil de données;C;IDENTIFIANT_LOGEMENT_RPLS;;RPLS;Identifiant RPLS;Identifiants & clés de jointure;Identifiant RPLS;;Texte;name_or_col_mismatch
+12_30_02;Recueil de données;D;IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du lot;;Texte;ok
+12_30_02;Recueil de données;E;INDIVIDUEL_COLLECTIF_ETUDIANT;;INDCOL;Individuel / collectif / étudiant;Caractéristiques du patrimoine;lot individuel ou collectif ou étudiant ?;Individuel ou Collectif ou Etudiant;Texte;ok
+12_30_02;Recueil de données;F;ANNEE_MISE_EN_SERVICE;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Année de mise en service du lot;Exemple : 1990;Numérique;ok
+12_30_02;Recueil de données;G;TYPE_LOT;;TYPO;Typologie (T1…T7);Caractéristiques du patrimoine;Type de lot;"Exemples : 
+T1
+T2
+T3
+T4
+T5
+Etc…";Texte;ok
+12_30_02;Recueil de données;H;FINANCEMENT_INITIAL;;FINI;Financement initial;Caractéristiques du patrimoine;Catégorie de financement initial du lot;Exemples : HLMO, ILN, etc…;Texte;ok
+12_30_02;Recueil de données;I;SURF_HABITABLE;;SHAB;Surface habitable;Caractéristiques du patrimoine;Surface habitable du lot;En m²;Numérique;ok
+12_30_02;Recueil de données;J;SURF_CORRIGEE;;SUTIL;Surface utile / corrigée / quittancée;Caractéristiques du patrimoine;Surface corrigée du lot;En m²;Numérique;ok
+12_30_02;Recueil de données;K;SURF_UTILE;;SUTIL;Surface utile / corrigée / quittancée;Caractéristiques du patrimoine;Surface utile du lot;En m²;Numérique;ok
+12_30_02;Recueil de données;L;SURF_QUITTANCEE;;SUTIL;Surface utile / corrigée / quittancée;Caractéristiques du patrimoine;"Surface quittancée du lot (base de calcul du loyer)
+Exemple : surface quittancée = surface utile * coefficient propre au lot";En m²;Numérique;ok
+12_30_02;Recueil de données;M;DATE_VALEUR_CONV;;CONV;Conventionnement APL;Caractéristiques du patrimoine;Date de valeur prise en compte pour le calcul de l'actualisation du taux maximal (à défaut c'est la date de signature de la convention APL qui est considérée);;Date;ok
+12_30_02;Recueil de données;N;DATE_SIGNATURE_BAIL;;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;Date de signature du bail du lot;;Date;ok
+12_30_02;Recueil de données;O;LOYER_MAX_MENSUEL_INITIAL_EUROS;;LMAX;Loyer maximum / taux de loyer;Loyers, charges & quittancement;"Loyer maximum initial autorisé par la convention APL, ou en cas d’avenant, le loyer maximum figurant dans cet avenant, en euros par m² et par mois
+Compléter LOYER_MAX_INITIAL_EUROS ou LOYER_MAX_INITIAL_FRF par ligne.";En euros;Numérique;ok
+12_30_02;Recueil de données;P;LOYER_MAX_MENSUEL_INITIAL_FRF;;LMAX;Loyer maximum / taux de loyer;Loyers, charges & quittancement;"Loyer maximum initial autorisé par la convention APL, ou en cas d’avenant, le loyer maximum figurant dans cet avenant, en francs par m² et par mois
+Compléter LOYER_MAX_INITIAL_EUROS ou LOYER_MAX_INITIAL_FRF par ligne.";En francs;Numérique;ok
+12_30_02;Recueil de données;Q;MNT_APL_MENSUEL;;AIDES;APL / AL / RLS;Loyers, charges & quittancement;Montant mensuel de l'APL (ou AL);En euros;Numérique;ok
+12_30_02;Recueil de données;R;MNT_LOYER_PRATIQUE_MENSUEL;;LOYER;Loyer pratiqué / redevance;Loyers, charges & quittancement;Montant mensuel du loyer pratiqué (ou loyer quittancé) du lot (hors charges et hors loyer annexe pour un mois complet) au 1er janvier de l’année N;En euros, pour le quittancement du mois de janvier de l'année N;Numérique;ok
+12_30_02;Recueil de données;S;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du patrimoine du lot;;Texte;ok
+12_30_02;Recueil de données;T;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du patrimoine du lot;;Texte;ok
+12_30_02;Recueil de données;U;CODE_INSEE_COMMUNE;;INSEE;Code INSEE commune;Localisation & zonages;Code INSEE de la commune du lot;Format texte;Texte;ok
+12_30_02;Recueil de données;V;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Nom de la commune du lot;;Texte;ok
+12_30_02;Recueil de données;W;QPV_HORS_QPV;;QPV;QPV / ANRU;Localisation & zonages;Le lot est-il situé en quartier prioritaire ?;QPV ou Hors QPV;Texte;ok
+12_30_02;Recueil de données;X;ZONE_GEOGRAPHIQUE;;ZGEO;Zone géographique p/i/r/d;Localisation & zonages;Zone géographique;"Indiquer la lettre pour la zone concernée :
+p : Paris
+i : IdF
+r : autres régions
+d : dom
+PLI : Abis, A, B1, B2 / C ou B1 DOM";Texte;ok
+12_30_02;Recueil de données;Y;ZONE_LOYERS;;Z123;Zonage 1/2/3 (loyers, plafonds, RLS);Localisation & zonages;Zone géographique déterminant le plafond de ressources;1, 1bis, 2, 3;Texte;ok
+12_30_02;Recueil de données;Z;NB_OCCUPANTS;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Nombre d'occupants par lot;"Nombre d'occupants au 1er janvier de l'année N
+A partir des dates d'arrivée et de départ renseignées dans le progiciel";Numérique;ok
+12_30_02;Recueil de données;AA;LOGT_CONV_OU_NON;;CONV;Conventionnement APL;Caractéristiques du patrimoine;lot conventionné (1) ou non conventionné (0);1 ou 0;Numérique;ok
+12_30_02;Recueil de données;AB;FINANCEMENT_CUS;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Catégorie de financement CUS du lot;PLAI, PLUS, PLI, PLS;Texte;ok
+12_30_03;Recueil de données;A;RAISON_SOCIALE;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Nom du bailleur social;;Texte;ok
+12_30_03;Recueil de données;B;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;;Texte;ok
+12_30_03;Recueil de données;C;LIB_AGENCE;;AGENCE;Agence / secteur de gestion;Identifiants & clés de jointure;Libellé de l'agence;;Texte;ok
+12_30_03;Recueil de données;D;CODE_GROUPE_IMMOBILIER;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du groupe immobilier / programme;;Texte;ok
+12_30_03;Recueil de données;E;NOM_GROUPE_IMMOBILIER;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du groupe immobilier / programme;;Texte;ok
+12_30_03;Recueil de données;F;CODE_BATIMENT;;BAT;Code bâtiment / escalier;Identifiants & clés de jointure;Code du bâtiment du lot;;Texte;name_or_col_mismatch
+12_30_03;Recueil de données;G;CODE_ESCALIER;;BAT;Code bâtiment / escalier;Identifiants & clés de jointure;Code de l'escalier du lot;;Texte;name_or_col_mismatch
+12_30_03;Recueil de données;H;CODE_INSEE_COMMUNE;;INSEE;Code INSEE commune;Localisation & zonages;Code INSEE de la commune;;Texte;ok
+12_30_03;Recueil de données;I;SURF_HABITABLE_AU_GROUPE_IMMOBILIER;;SHAB;Surface habitable;Caractéristiques du patrimoine;Somme de la surface habitable par programme;En m²;Numérique;ok
+12_30_03;Recueil de données;J;CODE_NATURE_CHARGES;;CHARGES;Charges récupérables;Loyers, charges & quittancement;Code de la nature des charges locatives;Exemples : 3235;Texte;ok
+12_30_03;Recueil de données;K;NATURE_CHARGES;;CHARGES;Charges récupérables;Loyers, charges & quittancement;Libellé de la nature des charges locatives;Exemples : TAXES ORDURES MENAG.;Texte;ok
+12_30_03;Recueil de données;L;COMPTE_COMPTABLE;;COMPTA;Comptes comptables / budgétaires;Loyers, charges & quittancement;Compte comptable des charges récupérables de classe 6 rattaché;;Texte;ok
+12_30_03;Recueil de données;M;LIB_COMPTE_COMPTABLE;;COMPTA;Comptes comptables / budgétaires;Loyers, charges & quittancement;Libellé du compte comptable des charges récupérables de classe 6 rattaché;;Texte;ok
+12_30_03;Recueil de données;N;EXERCICE_COMPTABLE;;COMPTA;Comptes comptables / budgétaires;Loyers, charges & quittancement;Année de l'exercice comptable;Exemple : 2023;Numérique;ok
+12_30_03;Recueil de données;O;MONTANT_RECUPERABLE_ANNUEL_TTC;;CHARGES;Charges récupérables;Loyers, charges & quittancement;Somme du montant annuel des charges récupérables en TTC par programme;En euros;Numérique;ok
+12_30_03;Recueil de données;P;MODE_DE_REPARTITION;;CHARGES;Charges récupérables;Loyers, charges & quittancement;Mode de répartition des charges locatives;"Exemples : 
+Surface habitable
+Parts égales
+Forfait";Texte;ok
+12_30_03;Recueil de données;Q;ANNEE_CHARGES;;CHARGES;Charges récupérables;Loyers, charges & quittancement;Année des charges locatives;Exemple : 2023;Numérique;ok
+12_30_04;Recueil de données;A;RAISON_SOCIALE;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Nom du bailleur social;;Texte;ok
+12_30_04;Recueil de données;B;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;;Texte;ok
+12_30_04;Recueil de données;C;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du patrimoine du logement locataire;;Texte;ok
+12_30_04;Recueil de données;D;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du patrimoine du logement locataire;;Texte;ok
+12_30_04;Recueil de données;E;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Commune du logement locataire;;Texte;ok
+12_30_04;Recueil de données;F;QPV_HORS_QPV;;QPV;QPV / ANRU;Localisation & zonages;Le logement est-il situé en quartier prioritaire ?;QPV ou Hors QPV;Texte;ok
+12_30_04;Recueil de données;G;ZRR_HORS_ZRR;;QPV;QPV / ANRU;Localisation & zonages;Le logement est-il situé en zone de revitalisation rurale ?;ZRR ou Hors ZRR;Texte;ok
+12_30_04;Recueil de données;H;ZONE_TENSION;;ZABC;Zonage A/B/C (tension);Localisation & zonages;Zone géographique déterminant le niveau de tension d'une commune;Abis, A, B1, B2, C;Texte;ok
+12_30_04;Recueil de données;I;ZONE_LOYERS;;Z123;Zonage 1/2/3 (loyers, plafonds, RLS);Localisation & zonages;Zone géographique déterminant le plafond de ressources;1, 1bis, 2, 3;Texte;ok
+12_30_04;Recueil de données;J;IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement locataire;;Texte;ok
+12_30_04;Recueil de données;K;FINANCEMENT_CUS;;FCUS;Financement CUS (PLAI / PLUS / PLS / PLI);Caractéristiques du patrimoine;Catégorie de financement du logement;ex : PLAI, PLUS, PLS, PLI;Texte;name_or_col_mismatch
+12_30_04;Recueil de données;L;NUM_COMPTE_LOCATAIRE;;CPT;Compte locataire;Identifiants & clés de jointure;Numéro du compte locataire (prendre en compte uniquement le premier locataire signataire);;Texte;ok
+12_30_04;Recueil de données;M;NOM_PRENOM_LOCATAIRE;;PERS;Nom de la personne (locataire, candidat, acquéreur);Identifiants & clés de jointure;Nom et prénom du compte locataire;;Texte;ok
+12_30_04;Recueil de données;N;DATE_NAISSANCE;;MENAGE;Composition du ménage;Occupants, ménages & attributions;Date de naissance du locataire;;Date;ok
+12_30_04;Recueil de données;O;DATE_SORTIE;;SORTIE;Sortie du locataire;Occupants, ménages & attributions;Date de sortie du locataire dans le logement;;Date;ok
+12_30_04;Recueil de données;P;MNT_RFR_N-1;;RESS;Ressources du ménage (RFR, revenus);Occupants, ménages & attributions;Montant du revenu fiscal de référence n-1;En euros;Numérique;ok
+12_30_04;Recueil de données;Q;PLAFOND;;PLAF;Plafonds de ressources & quartiles;Occupants, ménages & attributions;Montant du plafond de ressources;En euros;Numérique;ok
+12_30_04;Recueil de données;R;PLAFOND_PLS;;PLAF;Plafonds de ressources & quartiles;Occupants, ménages & attributions;Montant du plafond de ressources en prêt locatif social (plafond PLUS majoré de 30%);En euros;Numérique;ok
+12_30_04;Recueil de données;S;POURCENTAGE_DE_DEPASSEMENT_PLAFONDS;;PLAF;Plafonds de ressources & quartiles;Occupants, ménages & attributions;Pourcentage de dépassement du plafond de ressources;En %;Texte;ok
+12_30_04;Recueil de données;T;COEF_DE_DEPASSEMENT_PLAFONDS;;PLAF;Plafonds de ressources & quartiles;Occupants, ménages & attributions;Coefficient de dépassement du plafond de ressources;;Texte;ok
+12_30_04;Recueil de données;U;FORFAITAIRE_CALCULE;;SLS;Supplément de loyer de solidarité;Loyers, charges & quittancement;"Si coefficient de dépassement du plafond de ressources = 0 ou non renseigné alors vide
+Si coefficient de dépassement du plafond de ressources = 14,9% alors FORFAITAIRE
+Sinon CALCULE";"Vide
+FORFAITAIRE
+CALCULE";Texte;ok
+12_30_04;Recueil de données;V;SLR_OU_SLS_REFERENCE;;SLS;Supplément de loyer de solidarité;Loyers, charges & quittancement;Montant du Supplément de loyer de référence applicable à la zone;En euros;Numérique;ok
+12_30_04;Recueil de données;W;SURF_HABITABLE;;SHAB;Surface habitable;Caractéristiques du patrimoine;Surface habitable du logement;En m²;Numérique;ok
+12_30_04;Recueil de données;X;SLS_CALCULE;;SLS;Supplément de loyer de solidarité;Loyers, charges & quittancement;"= COEF_DE_DEPASSEMENT_PLAFONDS x SLR x SURF_HABITABLE
+= Coefficient de dépassement du plafond de ressources x Montant du Supplément de loyer de référence x Surface habitable du logement";En euros;Numérique;ok
+12_30_04;Recueil de données;Y;SLS_RETENU;;SLS;Supplément de loyer de solidarité;Loyers, charges & quittancement;Montant du SLS retenu au locataire;En euros;Numérique;ok
+12_30_04;Recueil de données;Z;SLS_QUITTANCE_EN_DECEMBRE_ANNEE_N;;SLS;Supplément de loyer de solidarité;Loyers, charges & quittancement;Montant du SLS quittancé en décembre de l'année N;En euros;Numérique;ok
+12_30_04;Recueil de données;AA;LOYER_JANVIER_ANNEE_N;;LOYER;Loyer pratiqué / redevance;Loyers, charges & quittancement;Montant du loyer année N;En euros;Numérique;ok
+12_30_04;Recueil de données;AB;ANNEE_CALCUL_SLS;;SLS;Supplément de loyer de solidarité;Loyers, charges & quittancement;Année de calcul du SLS;;Numérique;ok
+12_30_05;Recueil de données;A;RAISON_SOCIALE;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Nom du bailleur social;;Texte;ok
+12_30_05;Recueil de données;B;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;;Texte;ok
+12_30_05;Recueil de données;C;LIB_AGENCE;;AGENCE;Agence / secteur de gestion;Identifiants & clés de jointure;Libellé de l'agence;;Texte;ok
+12_30_05;Recueil de données;D;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du patrimoine du logement locataire;;Texte;ok
+12_30_05;Recueil de données;E;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du patrimoine du logement locataire;;Texte;ok
+12_30_05;Recueil de données;F;IDENTIFIANT_LOGEMENT_RPLS;;RPLS;Identifiant RPLS;Identifiants & clés de jointure;Identifiant du logement RPLS;;Texte;ok
+12_30_05;Recueil de données;G;IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du logement locataire;;Texte;ok
+12_30_05;Recueil de données;H;NUM_COMPTE_LOCATAIRE;;CPT;Compte locataire;Identifiants & clés de jointure;Numéro du compte locataire;;Texte;ok
+12_30_05;Recueil de données;I;NOM_PRENOM_LOCATAIRE;;PERS;Nom de la personne (locataire, candidat, acquéreur);Identifiants & clés de jointure;Nom et prénom du compte locataire;;Texte;ok
+12_30_05;Recueil de données;J;DATE_ENTREE_LIEUX;;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;Date d'entrée dans les lieux;;Date;ok
+12_30_05;Recueil de données;K;DATE_SORTIE;;SORTIE;Sortie du locataire;Occupants, ménages & attributions;Date de sortie du locataire dans le logement;;Date;ok
+12_30_05;Recueil de données;L;DATE_DEPOT_GARANTIE;;DG;Dépôt de garantie;Loyers, charges & quittancement;"Date de dépôt de garantie
+Extraire la date de quittancement des locataires pour lesquels la rubrique de quittancement commence par DEPOT GARANTIE";;Date;ok
+12_30_05;Recueil de données;M;NATURE_LOT;;NATLOT;Nature de lot / annexes;Caractéristiques du patrimoine;Nature du logement locataire;Logement;Texte;ok
+12_30_05;Recueil de données;N;TYPE_LOT;;TYPO;Typologie (T1…T7);Caractéristiques du patrimoine;Type de logement locataire;"Exemples : 
+Apt. 2 pièces
+Apt. 3 pièces
+Studio
+Chambre de bonne
+Atelier d'artiste
+5 pièces duplex
+Etc…";Texte;ok
+12_30_05;Recueil de données;O;CODE_RUBRIQUE;;QUIT;Quittancement (rubriques & montants);Loyers, charges & quittancement;Code rubrique de l'écriture analytique;Exemple : 138;Texte;ok
+12_30_05;Recueil de données;P;LIB_RUBRIQUE;;QUIT;Quittancement (rubriques & montants);Loyers, charges & quittancement;Libellé rubrique de l'écriture analytique;Exemple : CHARGES/ECS 2014 >0;Texte;ok
+12_30_05;Recueil de données;Q;COMPTE_COMPTABLE;;COMPTA;Comptes comptables / budgétaires;Loyers, charges & quittancement;Compte comptable rattaché à l'écriture analytique;;Texte;ok
+12_30_05;Recueil de données;R;LIB_COMPTE_COMPTABLE;;COMPTA;Comptes comptables / budgétaires;Loyers, charges & quittancement;Libellé du compte comptable rattaché à l'écriture analytique;;Texte;ok
+12_30_05;Recueil de données;S;MONTANT_QUIT;;QUIT;Quittancement (rubriques & montants);Loyers, charges & quittancement;Montant du quittancement;En euros;Numérique;ok
+12_30_05;Recueil de données;T;ANNEE_MOIS_QUIT;;QUIT;Quittancement (rubriques & montants);Loyers, charges & quittancement;Année Mois du quittancement;Exemple : 202502;Numérique;ok
+12_30_06;Recueil de données;A;RAISON SOCIALE;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Nom du bailleur social;;Texte;ok
+12_30_06;Recueil de données;B;SIREN;;ORG;Organisme (SIREN / raison sociale);Identifiants & clés de jointure;Numéro de SIREN du bailleur social;;Texte;ok
+12_30_06;Recueil de données;C;LIB_AGENCE;;AGENCE;Agence / secteur de gestion;Identifiants & clés de jointure;Libellé de l'agence;;Texte;ok
+12_30_06;Recueil de données;D;NUM_COMPTE_LOCATAIRE;;CPT;Compte locataire;Identifiants & clés de jointure;Numéro du compte locataire;;Texte;ok
+12_30_06;Recueil de données;E;NOM_PRENOM_SIGNATAIRE_BAIL;;PERS;Nom de la personne (locataire, candidat, acquéreur);Identifiants & clés de jointure;Nom et prénom du signataire du bail;;Texte;ok
+12_30_06;Recueil de données;F;DATE_ENTREE_LIEUX;;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;Date d'entrée dans le logement;;Date;ok
+12_30_06;Recueil de données;G;DATE_SORTIE;;SORTIE;Sortie du locataire;Occupants, ménages & attributions;Date de sortie du locataire dans le logement;;Date;ok
+12_30_06;Recueil de données;H;IDENTIFIANT_LOT;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;Identifiant du lot;;Texte;ok
+12_30_06;Recueil de données;I;CODE_PATRIMOINE;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;Code du patrimoine;;Texte;ok
+12_30_06;Recueil de données;J;NOM_PATRIMOINE;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;Nom du patrimoine;;Texte;ok
+12_30_06;Recueil de données;K;CODE_INSEE;;INSEE;Code INSEE commune;Localisation & zonages;Code de la commune INSEE;;Numérique;name_or_col_mismatch
+12_30_06;Recueil de données;L;COMMUNE;;COMMUNE;Commune (libellé);Localisation & zonages;Commune du lot;;Texte;name_or_col_mismatch
+12_30_06;Recueil de données;M;NATURE_LOT;;NATLOT;Nature de lot / annexes;Caractéristiques du patrimoine;Nature du lot;"Exemples : 
+Bureau accueil ou loge
+Cave
+Foyers
+Local d'activité
+Local d'habitation
+Résidence Etudiant(e)
+Stationnement
+Terrain
+Etc…";Texte;name_or_col_mismatch
+12_30_06;Recueil de données;N;ANNEE_MISE_EN_SERVICE_PATRIMOINE;;DMES;Date / année de mise en service;Caractéristiques du patrimoine;Année de mise en service du patrimoine;;Texte;name_or_col_mismatch
+12_30_06;Recueil de données;O;ANNEE_SAISIE_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Année de saisie de la réclamation;;Texte;ok
+12_30_06;Recueil de données;P;DATE_SAISIE_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Date de saisie de la réclamation;;Date;ok
+12_30_06;Recueil de données;Q;DATE_DEBUT_ETAPE;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Date de début du traitement de la réclamation;;Date;ok
+12_30_06;Recueil de données;R;LIBELLE_DECISION_ETAPE;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Libellé de la décision de l'étape;;Texte;ok
+12_30_06;Recueil de données;S;DATE_FIN_ETAPE;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Date de fin du traitement de la réclamation;;Date;ok
+12_30_06;Recueil de données;T;DATE_CLOTURE_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Date de clôture de la réclamation;;Date;ok
+12_30_06;Recueil de données;U;NUM_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Numéro de la réclamation;;Texte;ok
+12_30_06;Recueil de données;V;TYPE_MEDIA_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Type de média de la réclamation;"Exemples : 
+Extranet locataire
+Courrier simple
+Courrier AR
+Email
+Gardien
+Réseaux sociaux
+Téléphone
+Etc…";Texte;ok
+12_30_06;Recueil de données;W;TYPE_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Type de la réclamation;"Exemples :
+Technique
+Commerciale
+Administrative
+Etc…";Texte;ok
+12_30_06;Recueil de données;X;NATURE_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Nature de la réclamation;"Exemples : 
+Menuiserie
+Plomberie
+Sinistre
+Chauffage
+Ascenseur
+Peinture
+Maçonnerie
+Trouble de voisinage
+Etc…";Texte;ok
+12_30_06;Recueil de données;Y;ETAT_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Statut de la réclamation à date au moment de l'extraction;"Exemples :
+En cours
+Clôturé / Fermé";Texte;ok
+12_30_06;Recueil de données;Z;DESCRIPTION_RECLAMATION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Description de la réclamation (commentaire)D51:D53;;Texte;ok
+12_30_06;Recueil de données;AA;DATE_DEBUT_INTERVENTION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Date de début de l'intervention technique (= date de début des travaux hors délai facturation);;Date;ok
+12_30_06;Recueil de données;AB;DATE_CLOTURE_INTERVENTION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Date de clôture de l'intervention technique (= date de fin de travaux hors délai facturation);;Date;ok
+12_30_06;Recueil de données;AC;NUM_INTERVENTION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Numéro de l'intervention (possibilité d'avoir plusieurs interventions par réclamation);;Texte;ok
+12_30_06;Recueil de données;AD;TYPE_INTERVENTION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Type d'intervention;"Exemples : 
+Travaux menuiserie
+Travaux plomberie
+Travaux électricité
+Etc…";Texte;ok
+12_30_06;Recueil de données;AE;FOURNISSEUR_INTERVENTION;;TITU;Titulaire / fournisseur;Identifiants & clés de jointure;Nom de l'entreprise intervenante ou régie sur l'intervention;;Texte;ok
+12_30_06;Recueil de données;AF;NUM_MARCHE;;MARCHE;Référence de marché;Identifiants & clés de jointure;Numéro du marché signé par l'entreprise;;Texte;ok
+12_30_06;Recueil de données;AG;MNT_TTC_INTERVENTION;;INTERV;Interventions & réclamations;Travaux, maintenance & marchés;Montant TTC de l'intervention;En euros;Numérique;ok
+12_30_06;Recueil de données;AH;COMPTE_BUDGETAIRE;;COMPTA;Comptes comptables / budgétaires;Loyers, charges & quittancement;Compte budgétaire rattaché à l'intervention;;Texte;ok
+12_30_06;Recueil de données;AI;COMPTE_COMPTABLE;;COMPTA;Comptes comptables / budgétaires;Loyers, charges & quittancement;Compte comptable rattaché à l'intervention;;Texte;ok
+12_30_06;Recueil de données;AJ;LIB_COMPTE_COMPTABLE;;COMPTA;Comptes comptables / budgétaires;Loyers, charges & quittancement;Libellé du compte comptable rattaché à l'intervention;;Texte;ok
+12_30_07;LOCATAIRES SORTANTS ;B;Agence;;AGENCE;Agence / secteur de gestion;Identifiants & clés de jointure;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;C;nom opération;;GRP_NOM;Nom du groupe immobilier;Identifiants & clés de jointure;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;D;code opération;;GRP;Code groupe immobilier / programme;Identifiants & clés de jointure;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;E;identifiant du logement;;LOT;Identifiant lot / logement (interne);Identifiants & clés de jointure;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;F;type logement;;TYPO;Typologie (T1…T7);Caractéristiques du patrimoine;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;G;Type financement;;FINI;Financement initial;Caractéristiques du patrimoine;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;H;NOM du locataire;;PERS;Nom de la personne (locataire, candidat, acquéreur);Identifiants & clés de jointure;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;I;identifiant du locataire;;CPT;Compte locataire;Identifiants & clés de jointure;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;J;date préavis de départ;;SORTIE;Sortie du locataire;Occupants, ménages & attributions;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;K;date sortie du logement;;SORTIE;Sortie du locataire;Occupants, ménages & attributions;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;L;date décompte  de solde;;SORTIE;Sortie du locataire;Occupants, ménages & attributions;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;M;montant travaux de remise en état après EDL;;REL;Remise en état des logements (EDL / REL);Travaux, maintenance & marchés;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;N;dont montant imputé au locataire;;REL;Remise en état des logements (EDL / REL);Travaux, maintenance & marchés;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;O;Regul  charges;;CHARGES;Charges récupérables;Loyers, charges & quittancement;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;P;montant dépôt de garantie;;DG;Dépôt de garantie;Loyers, charges & quittancement;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;Q;si absence de dépôt de garantie préciser le motif;;DG;Dépôt de garantie;Loyers, charges & quittancement;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;R;date de restitution du dépôt de garantie;;DG;Dépôt de garantie;Loyers, charges & quittancement;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;S;date de passage en CAL;;CAL;Passage en CALEOL;Occupants, ménages & attributions;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;T;date entrée dans le logt;;BAIL;Dates de bail & d'entrée dans les lieux;Occupants, ménages & attributions;;;;nodef
+12_30_07;LOCATAIRES SORTANTS ;U;Montant loyer mensuel logt reloué;;LOYER;Loyer pratiqué / redevance;Loyers, charges & quittancement;;;;nodef

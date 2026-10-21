@@ -1,0 +1,12 @@
+DIAGNOSTIC DES TRAMES ANCOLS — page prête à l'emploi
+
+OUVRIR
+- Double-cliquer sur index.html, ou
+- dans VS Code : extension « Live Server », puis « Go Live » (http://127.0.0.1:5500).
+La page est autonome : charte, données et scripts sont inclus. Aucun accès réseau.
+
+REGÉNÉRER (poste avec Python 3 et openpyxl)
+  python3 scripts/01_inventaire.py
+  python3 scripts/02_donnees_pivots.py
+  python3 scripts/03_analyse.py
+  python3 scripts/04_assembler.py

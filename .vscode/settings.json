@@ -1,0 +1,5 @@
+{
+  // Live Server (bouton « Go Live » en bas à droite) sert directement la page assemblée.
+  "liveServer.settings.root": "/app-statique",
+  "liveServer.settings.port": 5500
+}

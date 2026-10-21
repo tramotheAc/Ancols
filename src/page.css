@@ -1,0 +1,193 @@
+/* ===========================================================================
+   Diagnostic des trames ANCOLS - styles propres a la page.
+
+   Tout ce qui est generique (ossature, cartes, tuiles, tableaux, jetons,
+   tiroir, filtres) vient de la charte, chargee avant ce fichier. Ici, seulement
+   ce que la charte ne sait pas dessiner : le reseau, la matrice, la frise, les
+   fiches. Aucune couleur en dur : uniquement les alias de la charte, plus
+   --fam repose localement sur un element pour colorer une famille.
+   =========================================================================== */
+
+.surtitre {
+  display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  font-weight: 700; color: var(--encre-doux); margin-bottom: 4px;
+}
+.doux { color: var(--encre-doux); }
+.pousse { margin-left: auto; }
+.pile { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.liste { display: flex; flex-direction: column; gap: 10px; }
+.liste.large-gap { gap: 22px; }
+.defile { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.cadre-table.haut { max-height: 70vh; }
+.case { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--encre-doux); cursor: pointer; }
+.pastille-legende { background: var(--fam); display: inline-block; }
+.puce { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--fam); flex: none; }
+.colonnes-jumelles > * { min-width: 0; }
+
+/* Les codes de trame se lisent en chasse fixe et ouvrent la fiche. */
+.code-trame {
+  font-family: var(--font-mono); font-size: 11.5px; font-weight: 600; cursor: pointer;
+  padding: 2px 8px; border-radius: 999px; white-space: nowrap;
+  background: var(--taupe-fond); color: var(--taupe); border: 1px solid transparent;
+}
+.code-trame:hover { border-color: var(--taupe); }
+.jetons { display: flex; flex-wrap: wrap; gap: 6px; }
+button.jeton { cursor: pointer; white-space: normal; text-align: left; max-width: 100%; }
+button.jeton:hover { border-color: var(--encre-tres-doux); }
+
+/* ------------------------------------------------------------- synthese */
+.tuile .valeur { font-size: 30px; }
+.constats { margin: 0; padding: 0; list-style: none; counter-reset: constat; display: flex; flex-direction: column; }
+.constats > li { counter-increment: constat; display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 2px 10px; padding: 12px 0; border-top: 1px solid var(--bord); }
+.constats > li:first-child { border-top: 0; padding-top: 0; }
+.constats > li::before { content: counter(constat, decimal-leading-zero); font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--petrole); padding-top: 2px; grid-row: span 2; }
+.constats.sans-numero > li { grid-template-columns: minmax(0, 1fr); }
+.constats.sans-numero > li::before { display: none; }
+.constats b { font-size: 14.5px; font-weight: 600; }
+.constats p { margin: 0; color: var(--encre-doux); font-size: 13.5px; }
+.barre .remplissage { background: var(--fam, var(--petrole)); }
+.barre .libelle { display: flex; align-items: center; gap: 7px; }
+.barre .libelle span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.piste.double { display: flex; gap: 2px; background: none; }
+.piste.double .remplissage { border-radius: 0 4px 4px 0; }
+.barre.large { grid-template-columns: minmax(150px, 210px) 1fr 40px; }
+.referentiels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 10px; }
+.referentiel { border: 1px dashed var(--bord-fort); border-radius: var(--radius-sm); padding: 10px 12px; display: flex; flex-direction: column; gap: 3px; }
+.referentiel b { font-size: 13.5px; }
+.referentiel span { font-size: 12.5px; color: var(--encre-doux); }
+
+/* ------------------------------------------------------------ dessins */
+.dessin text { font-family: var(--font-ui); fill: var(--encre); }
+.dessin-large { min-width: 860px; width: 100%; display: block; }
+.dessin .t-trame { font-size: 12.5px; font-weight: 600; cursor: pointer; }
+.dessin .t-code { font-family: var(--font-mono); font-size: 10.5px; fill: var(--encre-doux); }
+.dessin .t-pivot { font-size: 11.5px; cursor: pointer; }
+.dessin .t-famille { font-size: 10px; font-weight: 700; letter-spacing: .08em; fill: var(--encre-doux); text-transform: uppercase; }
+.dessin .t-axe { font-size: 12px; fill: var(--encre-doux); }
+.dessin .lien { fill: none; stroke: var(--fam); stroke-width: 1.2; opacity: .26; transition: opacity .15s; }
+.dessin.focus .lien { opacity: .05; }
+.dessin.focus .lien.on { opacity: .9; stroke-width: 1.7; }
+.dessin .noeud { transition: opacity .15s; }
+.dessin.focus .noeud { opacity: .28; }
+.dessin.focus .noeud.on { opacity: 1; }
+.dessin .rond-famille { fill: var(--fam); }
+.dessin .rond-trame { fill: var(--encre); stroke: var(--encre); stroke-width: 1.5; }
+.dessin .rond-trame.questionnaire { fill: var(--surface); }
+.dessin .grille { stroke: var(--bord); stroke-width: 1; }
+.dessin .periode-controlee { fill: var(--petrole-fond); }
+.dessin .periode { fill: var(--accent); }
+.dessin .periode.gl { fill: var(--rampe-2); }
+.dessin .photo { fill: var(--surface); stroke: var(--encre); stroke-width: 2; }
+.dessin .t-petrole { fill: var(--petrole); font-size: 11px; }
+.info { font-size: 13.5px; color: var(--encre-doux); }
+.info b { color: var(--encre); }
+
+/* heatmap de proximite : une rampe petrole en cinq marches */
+.chaleur { border-collapse: separate; border-spacing: 2px; width: auto; font-size: 11px; }
+.chaleur th, .chaleur td { border: 0; padding: 0; background: none; }
+.chaleur tbody tr, .chaleur tbody tr:nth-child(even), .chaleur tbody tr:hover { background: none; }
+.chaleur td.c { width: 26px; min-width: 26px; height: 26px; border-radius: 4px; text-align: center; font-family: var(--font-mono); font-size: 10.5px; color: var(--encre); }
+.chaleur td.n1 { background: var(--surface-2); }
+.chaleur td.n2 { background: var(--rampe-1); }
+.chaleur td.n3 { background: var(--rampe-2); }
+.chaleur td.n4 { background: var(--rampe-3); color: var(--fond); }
+.chaleur td.n5 { background: var(--rampe-5); color: var(--fond); }
+.chaleur td.diag { background: var(--surface-3); }
+.chaleur th.r { font-family: var(--font-mono); font-weight: 500; color: var(--encre-doux); padding-right: 8px; text-align: right; white-space: nowrap; font-size: 11px; max-width: none; }
+.chaleur th.r span { font-family: var(--font-ui); }
+.chaleur th.cl { height: 118px; vertical-align: bottom; padding-bottom: 4px; }
+.chaleur th.cl div { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-mono); font-weight: 500; color: var(--encre-doux); white-space: nowrap; font-size: 10.5px; }
+.cle-n1 { --fam: var(--surface-2); } .cle-n2 { --fam: var(--rampe-1); } .cle-n3 { --fam: var(--rampe-2); }
+.cle-n4 { --fam: var(--rampe-3); } .cle-n5 { --fam: var(--rampe-5); }
+
+/* ------------------------------------------------------------- matrice */
+.mx { width: auto; font-size: 12.5px; border-collapse: separate; border-spacing: 0; }
+.mx thead th { vertical-align: bottom; height: 158px; padding: 6px 10px; }
+.mx thead th.cl { width: 30px; min-width: 30px; padding: 6px 0; }
+.mx thead th.cl div { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; white-space: nowrap; margin: 0 auto; }
+.mx tbody td { padding: 0; vertical-align: middle; border-top: 1px solid var(--bord); }
+.mx td.lab { position: sticky; left: 0; z-index: 1; background: inherit; padding: 6px 10px; min-width: 230px; max-width: 270px; cursor: pointer; }
+.mx td.lab:hover { color: var(--petrole); }
+.mx td.lab .puce { margin-right: 8px; vertical-align: middle; }
+.mx td.c { text-align: center; width: 30px; height: 30px; }
+.mx td.n { padding: 0 10px; font-family: var(--font-mono); font-size: 11.5px; color: var(--encre-doux); text-align: right; }
+.mx tr.famille td { background: var(--surface-2); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--encre-doux); font-weight: 700; padding: 7px 10px; }
+.mx tr.famille td span { position: sticky; left: 10px; }
+.mx .sep { border-left: 2px solid var(--bord-fort); }
+.disque { display: inline-block; border-radius: 50%; background: var(--petrole); vertical-align: middle; }
+.disque.d1 { width: 7px; height: 7px; } .disque.d2 { width: 11px; height: 11px; } .disque.d3 { width: 15px; height: 15px; }
+.anneau { display: inline-block; width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--encre-doux); vertical-align: middle; }
+.mx tbody tr.choisi td { background: var(--petrole-fond); }
+
+/* ------------------------------------------------------------- themes */
+.grille-cartes { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 16px; }
+.grille-cartes .carte { display: flex; flex-direction: column; }
+.grille-cartes .corps { display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.grille-cartes .corps > p { margin: 0; color: var(--encre-doux); font-size: 13.5px; }
+.grille-cartes footer { padding: 12px 16px; border-top: 1px solid var(--bord); display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.etiquette-bloc { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; color: var(--encre-doux); }
+
+/* ------------------------------------------------- controles et alertes */
+.regle { display: grid; grid-template-columns: 5px minmax(0, 1fr); background: var(--surface); border: 1px solid var(--bord); border-radius: var(--radius-md); box-shadow: var(--ombre); overflow: hidden; }
+.regle .lisere { background: var(--bord-fort); }
+.regle.n1 .lisere { background: var(--rouge); }
+.regle.n2 .lisere { background: var(--ambre); }
+.regle .contenu { padding: 13px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.regle .tete { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.regle .ident { font-family: var(--font-mono); font-size: 11.5px; color: var(--encre-doux); }
+.regle h3 { font-size: 14.5px; }
+.regle p { margin: 0; font-size: 13.5px; color: var(--encre-doux); }
+.regle p.test b { color: var(--encre); font-weight: 600; }
+.groupe-alertes h3.titre-groupe { font-size: 16px; margin-bottom: 2px; }
+
+/* --------------------------------------------------------------- fiches */
+.fiches { display: grid; grid-template-columns: minmax(230px, 290px) minmax(0, 1fr); gap: 18px; align-items: start; }
+.liste-fiches { position: sticky; top: 8px; max-height: calc(100vh - 24px); overflow: auto; padding: 8px; display: flex; flex-direction: column; gap: 1px; }
+.liste-fiches .nav-groupe { color: var(--encre-doux); padding: 10px 8px 4px; }
+.liste-fiches button { display: grid; grid-template-columns: 60px minmax(0, 1fr) auto; gap: 8px; align-items: center; text-align: left; border: 0; background: none; padding: 6px 8px; border-radius: var(--radius-sm); cursor: pointer; font-size: 13px; }
+.liste-fiches button:hover { background: var(--surface-2); }
+.liste-fiches button[aria-current="true"] { background: var(--petrole-fond); font-weight: 600; }
+.liste-fiches .tech { font-size: 11px; color: var(--encre-doux); }
+#fiche .corps { display: flex; flex-direction: column; gap: 18px; }
+#fiche h2 { font-size: 21px; }
+.bloc { display: flex; flex-direction: column; gap: 8px; }
+.onglets-recueil { display: flex; flex-direction: column; gap: 6px; }
+.onglet-recueil { display: grid; grid-template-columns: minmax(0, 1fr) 34px minmax(60px, 200px); gap: 10px; align-items: center; font-size: 13px; }
+.onglet-recueil .remplissage { display: block; height: 8px; background: var(--rampe-2); border-radius: 0 4px 4px 0; }
+.section-q { border: 1px solid var(--bord); border-radius: var(--radius-sm); padding: 10px 12px; display: flex; flex-direction: column; gap: 7px; }
+.section-q b { font-size: 13.5px; font-weight: 600; }
+.charge { display: inline-flex; gap: 2px; align-items: flex-end; vertical-align: middle; }
+.charge i { width: 5px; background: var(--bord-fort); border-radius: 1px; }
+.charge i.on { background: var(--petrole); }
+@media (max-width: 900px) {
+  .fiches { grid-template-columns: 1fr; }
+  .liste-fiches { position: static; max-height: 300px; }
+}
+
+/* ------------------------------------------------------------- vagues */
+.vagues { display: grid; grid-template-columns: repeat(5, minmax(200px, 1fr)); gap: 12px; min-width: 1040px; }
+.vague { background: var(--surface); border: 1px solid var(--bord); border-radius: var(--radius-md); box-shadow: var(--ombre); padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+.vague .tete-vague { display: flex; flex-direction: column; gap: 2px; padding-bottom: 8px; border-bottom: 1px solid var(--bord); }
+.vague .tete-vague b { font-size: 15px; }
+.vague .tete-vague span:last-child { font-size: 12.5px; color: var(--encre-doux); }
+.carte-trame { border: 1px solid var(--bord); border-radius: var(--radius-sm); padding: 8px 10px; display: flex; flex-direction: column; gap: 4px; background: var(--fond); cursor: pointer; text-align: left; }
+.carte-trame:hover { border-color: var(--petrole); }
+.carte-trame .t { font-size: 13px; font-weight: 600; line-height: 1.3; }
+.carte-trame .m { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--encre-doux); }
+
+/* --------------------------------------------------- infobulle et toast */
+#infobulle { position: fixed; z-index: 70; pointer-events: none; background: var(--nuit); color: #fff; font-size: 12.5px; line-height: 1.45; padding: 8px 10px; border-radius: var(--radius-sm); max-width: 330px; opacity: 0; transition: opacity .1s; box-shadow: var(--ombre); }
+#infobulle.on { opacity: 1; }
+#infobulle .tech { color: #d7e2f2; }
+.toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--nuit); color: #fff; padding: 9px 16px; border-radius: var(--radius-sm); font-size: 13.5px; z-index: 80; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.toast.on { opacity: 1; }
+textarea.secours { width: 100%; height: 120px; font-family: var(--font-mono); font-size: 12px; margin: 8px 0; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@media (max-width: 600px) {
+  .barre.large { grid-template-columns: minmax(110px, 140px) 1fr 34px; }
+  .paire { grid-template-columns: 1fr; }
+}
+
+/* La charte peint les en-tetes de tableau en bleu nuit. La carte de chaleur
+   n'a pour en-tete que des libelles verticaux : on les pose sur la surface. */
+.chaleur thead.nu th { background: none; color: var(--encre-doux); position: static; padding: 0; }
