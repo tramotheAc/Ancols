@@ -14,6 +14,9 @@ de vigilance et de cohérence **avant** de produire les réponses.
 `app-statique/index.html` est une page autonome : double-clic, ou dans VS Code avec **Live Server**
 (bouton « Go Live », réglage fourni dans `.vscode/settings.json`).
 
+En ligne (GitHub Pages) : https://tramotheac.github.io/Ancols/ — l'`index.html` de la racine
+renvoie vers `app-statique/`, et `.nojekyll` empêche GitHub de remplacer la page par ce README.
+
 | Vue | Ce qu'elle montre |
 |---|---|
 | Synthèse | chiffres clés, cinq constats, étendue des chantiers, référentiels communs à constituer |
