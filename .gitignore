@@ -1,0 +1,14 @@
+# Trames REMPLIES : données nominatives et financières, jamais versionnées.
+# Seuls les modèles vierges de l'ANCOLS sont suivis (trames/vierges/).
+trames/*
+!trames/vierges/
+*.csv.gz
+reponses/
+extractions/
+
+# Poste de travail
+.env
+__pycache__/
+*.pyc
+.DS_Store
+~$*
